@@ -84,3 +84,4 @@ out/
 .vscode/
 
 /target
+/src/dist

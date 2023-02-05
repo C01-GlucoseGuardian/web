@@ -2,15 +2,19 @@
   "name": "vite",
   "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Vite.",
   "version": "0.0.0",
-  "private": true,
+  "homepage": "https://<username>.github.io/<repo>/",
   "stackblitz": {
     "startCommand": "npm start"
   },
   "scripts": {
     "start": "vite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d src/dist"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "sass": "^1.54.8",
     "vite": "^4.0.0"
   },
