@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nuovo Paziente</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="/%3Crepo%3E/assets/newprofilopaziente-2ed1c185.css">
+  <link rel="stylesheet" href="/%3Crepo%3E/assets/styles-78f6d61a.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1" id="nav-paziente">Crea Profilo Paziente</span>
+    <span class="navbar-brand mb-0 h1" id="nav-admin">Franco Franchi</span>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4" id="reminder-paziente">Crea nuovo paziente nel sistema</div>
+  </div>
+  <div class="row" id="form-paziente">
+    <div class="col-lg-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
+        <input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon2"> <i class="bi bi-person"> </i> </span>
+        <input type="text" class="form-control" placeholder="Cognome" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon3"> <i class="bi bi-person"> </i> </span>
+        <input type="text" class="form-control" placeholder="Codice Fiscale" aria-describedby="basic-addon1">
+      </div>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Sesso</option>
+        <option value="1">Maschio</option>
+        <option value="2">Femmina</option>
+      </select>
+    </div>
+    <div class="col-lg-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
+        <input type="Date" class="form-control" placeholder="Data Di Nascita" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
+        <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
+        <input type="text" class="form-control" placeholder="Telefono" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
+        <input type="text" class="form-control" placeholder="Indirizzo" aria-describedby="basic-addon1">
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
+        <input type="text" class="form-control" placeholder="Numeri Utili" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
+        <input type="text" class="form-control" placeholder="Tipo Diabete" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
+        <input type="text" class="form-control" placeholder="Comordabilità" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
+        <input type="text" class="form-control" placeholder="Farmaci Assunti" aria-describedby="basic-addon1">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4" id="reminder-paziente">Crea Terapia</div>
+  </div>
+  <div class="row" id="button-farmaci">
+    <div class="col-lg-2">
+      <div class="text pt-1 mb-5 pb-1">
+        <button type="button" class="btn btn-sm" id="cancella-selezionati">Cancella Selezionati</button>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="text pt-1 mb-5 pb-1">
+        <button type="button" class="btn btn-sm" id="nuovo-farmaco">Nuovo Farmaco</button>
+      </div>
+    </div>
+    <div class="col-lg-8"></div>
+  </div>
+
+  <div class="row" id="sezione-farmaci1">
+    <div class="col-lg-2">Farmaco</div>
+    <div class="col-lg-2">Dosaggio</div>
+    <div class="col-lg-2">Ora</div>
+    <div class="col-lg-2">Somministrazione</div>
+    <div class="col-lg-2">Note Aggiuntive</div>
+    <div class="col-lg-2">Modifica</div>
+  </div>
+
+  <div class="row" id="sezione-farmaci2">
+    <div class="col-lg-2">
+
+      <p>Nome Farmaco</p>
+      <p>Nome Farmaco</p>
+    </div>
+    <div class="col-lg-2">
+
+      <p>2mg</p>
+      <p>2mg</p>
+    </div>
+    <div class="col-lg-2">
+
+      <p>12:30</p>
+      <p>12:30</p>
+    </div>
+    <div class="col-lg-2">
+
+      <p>Orale</p>
+      <p>Orale</p>
+    </div>
+    <div class="col-lg-2">
+
+      <p>Prima dei pasti</p>
+      <p>Prima dei pasti</p>
+    </div>
+    <div class="col-lg-2">
+
+      <a href="#" id="link-modifica">Modifica</a>
+      <p></p>
+      <a href="#" id="link-modifica">Modifica</a>
+    </div>
+  </div>
+  <div class="row" id="bottone-crea-row">
+    <div class="col-lg-10"></div>
+    <div class="col-lg-2">
+      <div class="text pt-1 mb-5 pb-1">
+        <button type="button" class="btn btn-sm text-center" id="crea-button">Crea</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
