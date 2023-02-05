@@ -1,5 +1,11 @@
+.card{
+  background-color: #f8f2ed;
+
+}
+
 .navbar{
-  background-color: #ffffe6;
+  background-color: #f8f2ed;
+
 }
 #nav-paziente{
   padding-left: 35px;
@@ -14,7 +20,8 @@
   font-weight: bold;
 }
 #reminder-paziente{
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-left: 60px;
   font-size: 18px;
   font-family: Candara;
   font-weight: bold;
@@ -23,15 +30,18 @@
 
 #form-paziente{
   padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
   font-family: Candara;
 }
 
 #button-farmaci{
   padding-top: 20px;
+  padding-left: 25px;
 }
 
 #cancella-selezionati, #nuovo-farmaco{
-  background-color: #b3ffcc;
+  background-color: #a5d9d9;
   border-radius: 16px;
   font-family: Candara;
 }
@@ -39,6 +49,7 @@
 #sezione-farmaci1{
   font-family: Candara;
   font-size: 16px;
+  padding-left: 25px;
 }
 
 #sezione-farmaci2{
@@ -46,6 +57,7 @@
   font-weight: bold;
   font-size: 18px;
   padding-top: 5px;
+  padding-left: 25px;
 }
 
 #link-modifica{
@@ -59,7 +71,7 @@
 }
 
 #crea-button{
-  background-color: #b3ffcc;
+  background-color: #a5d9d9;
   border-radius: 16px;
   font-family: Candara;
   font-size: 18px;
