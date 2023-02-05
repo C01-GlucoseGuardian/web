@@ -19,25 +19,27 @@
   </div>
 </nav>
 
-<div class="container">
+<div class="container" style="background-color: #f7f2ed;">
   <div class="row">
     <div class="col-lg-4" id="reminder-paziente">Crea nuovo paziente nel sistema</div>
   </div>
   <div class="row" id="form-paziente">
     <div class="col-lg-4">
       <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
         <input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1">
-      </div>
-      <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon2"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Cognome" aria-describedby="basic-addon1">
-      </div>
-      <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon3"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Codice Fiscale" aria-describedby="basic-addon1">
-      </div>
-      <select class="form-select" aria-label="Default select example">
+    </div>
+    
+    <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
+        <input type="text" class="form-control" placeholder="Cognome" aria-label="Cognome" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-person-vcard"></i> </span>
+        <input type="text" class="form-control" placeholder="Codice Fiscale" aria-label="CF" aria-describedby="basic-addon1">
+    </div>
+      <select class="form-select" style="background-color: #f9f2ed;" aria-label="Default select example">
         <option selected>Sesso</option>
         <option value="1">Maschio</option>
         <option value="2">Femmina</option>
@@ -45,38 +47,40 @@
     </div>
     <div class="col-lg-4">
       <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="Date" class="form-control" placeholder="Data Di Nascita" aria-describedby="basic-addon1">
-      </div>
-      <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
-      </div>
-      <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Telefono" aria-describedby="basic-addon1">
-      </div>
-      <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Indirizzo" aria-describedby="basic-addon1">
-      </div>
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-calendar"></i> </i> </span>
+        <input type="date" class="form-control" placeholder="Data di nascita" aria-label="Data di nascita" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-envelope-at"></i> </span>
+        <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-phone"></i> </span>
+        <input type="tel" class="form-control" placeholder="Telefono" aria-label="Telefono" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-house"></i> </span>
+      <input type="text" class="form-control" placeholder="Indirizzo" aria-label="Indirizzo" aria-describedby="basic-addon1">
+    </div>
     </div>
     <div class="col-lg-4">
       <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Numeri Utili" aria-describedby="basic-addon1">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-telephone-plus"></i> </span>
+        <input type="text" class="form-control" placeholder="Numeri Utili" aria-label="Numeri Utili" aria-describedby="basic-addon1">
       </div>
       <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Tipo Diabete" aria-describedby="basic-addon1">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-bandaid"></i> </span>
+        <input type="text" class="form-control" placeholder="Tipo Diabete" aria-label="Tipo Diabete" aria-describedby="basic-addon1">
       </div>
       <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Comordabilità" aria-describedby="basic-addon1">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-file-medical"></i> </span>
+        <input type="text" class="form-control" placeholder="Comorbilità" aria-label="Comorbilità" aria-describedby="basic-addon1">
       </div>
       <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Farmaci Assunti" aria-describedby="basic-addon1">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-capsule"></i> </span>
+        <input type="text" class="form-control" placeholder="Farmaci Assunti" aria-label="Farmaci Assunti" aria-describedby="basic-addon1">
       </div>
     </div>
   </div>
