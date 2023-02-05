@@ -2,7 +2,7 @@
   "name": "vite",
   "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Vite.",
   "version": "0.0.0",
-  "homepage": "https://<username>.github.io/<repo>/",
+  "homepage": "https://c01-glucoseguardian.github.io/web/",
   "stackblitz": {
     "startCommand": "npm start"
   },

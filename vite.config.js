@@ -2,7 +2,7 @@ const path = require('path')
 
 export default {
   root: path.resolve(__dirname, 'src'),
-  base: "/<repo>/",
+  base: "/web/",
   build: {
     outDir: path.join(__dirname, "src/dist"),
     rollupOptions: {
