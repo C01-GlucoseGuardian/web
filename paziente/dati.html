@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dati Paziente</title>
+  
+  
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+  </script>
+  <link rel="stylesheet" href="/assets/dati-f976335d.css">
+  <link rel="stylesheet" href="/assets/styles-f188e414.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Visualizzazione Dati</span>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <p id="nome-paziente">Nome Paziente</p>
+      <p id="età-paziente">Età paziente</p>
+    </div>
+    <div class="col-md-3">
+      <button type="button" class="btn btn-sm" id="modifica-terapia">MODIFICA TERAPIA</button>
+    </div>
+  </div>
+  <div class="row">
+    <br>
+    <div class="col-md-9" id="grafico-glicemia">
+      <p>Andamento Della Glicemia</p>
+      <canvas id="myChart" style="width:100%;max-width:750px; padding-left: 5px"></canvas>
+      <script>
+        var xValues = [50,60,70,80,90,100,110,120,130,140,150];
+        var yValues = [7,8,8,9,9,9,10,11,14,14,15];
+
+        new Chart("myChart", {
+          type: "line",
+          data: {
+            labels: xValues,
+            datasets: [{
+              fill: true,
+              lineTension: 0,
+              backgroundColor: '#b3d9ff',
+              borderColor: "rgba(0,0,255,0.1)",
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: false},
+            scales: {
+              yAxes:  [{ scaleLabel: { display: true, labelString: 'Aumento della glicemia' } }],
+            }
+          }
+        });
+      </script>
+    </div>
+    <div class="col-md-3">
+      <p id="terapia-attuale">TERAPIA ATTUALE:</p>
+      <p id="terapia-paziente">Terapia in atto...</p>
+      <button type="button" class="btn btn-sm" id="riscontro-positivo">COMUNICA RISCONTRO POSITIVO</button>
+      <p id="feedback-ricevuti">ULTIMI FEEDBACK RICEVUTI</p>
+      <p id="feedback-list">Feedback list...</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
