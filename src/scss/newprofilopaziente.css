@@ -1,8 +1,3 @@
-.card{
-  background-color: #f8f2ed;
-
-}
-
 .navbar{
   background-color: #f8f2ed;
 
@@ -14,6 +9,19 @@
   padding-right: 35px;
 }
 
+input[type="text"] {
+  background-color: #f9f2ed;
+}
+input[type="email"] {
+  background-color: #f9f2ed;
+}
+input[type="tel"] {
+  background-color: #f9f2ed;
+}
+input[type="date"] {
+  background-color: #f9f2ed;
+}
+
 
 .navbar-brand{
   font-family: Candara;
@@ -22,8 +30,7 @@
 #reminder-paziente{
   padding-top: 30px;
   padding-left: 60px;
-  font-size: 18px;
-  font-family: Candara;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -41,21 +48,25 @@
 }
 
 #cancella-selezionati, #nuovo-farmaco{
-  background-color: #a5d9d9;
+  background-color: #a5d8d9;
+  color: white;
+  font-size: 12px;
   border-radius: 16px;
-  font-family: Candara;
+  font: bold;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #sezione-farmaci1{
   font-family: Candara;
-  font-size: 16px;
+  font-size: 14px;
   padding-left: 25px;
 }
 
 #sezione-farmaci2{
   font-family: Candara;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
   padding-top: 5px;
   padding-left: 25px;
 }
@@ -71,10 +82,13 @@
 }
 
 #crea-button{
-  background-color: #a5d9d9;
+  background-color: #a5d8d9;
+  color: white;
+  font-size: 14px;
   border-radius: 16px;
-  font-family: Candara;
-  font-size: 18px;
-
+  font: bold;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-left: -30px;
 }
 

@@ -10,109 +10,158 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="../scss/newprofilopaziente.css">
 </head>
-<body>
+<body style="background-color: #f7f2ed;">
+  
 
-<nav class="navbar">
-  <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1" id="nav-paziente">Crea Profilo Paziente</span>
-    <span class="navbar-brand mb-0 h1" id="nav-admin">Franco Franchi</span>
-  </div>
-</nav>
-<br>
 
-<div class="container">
-  <div class="card rounded-5 text-black" style="background-color: #f7f2ed;">
+
+<div class="container" >
+  <br>
+  <div class="card rounded-2 text-black" style="background-color: #ffffff;">
+
+    
+
+
+    <nav class="nav" style="background-color: #efd5a3; ">
+      <p style="font-size: 20px; margin-left: 20px; margin-top: 15px; " class="fw-normal ">
+          Crea profilo tutore 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;
+      </p>
+
+          <form class="form-inline my-2 my-lg-0; fw-light">
+              UserName &nbsp;
+              <img class="img-thumbnail rounded-circle" style="width: 50px; height: 50px;" src="/images/logoDoc.png">
+          </form>
+
+    </nav>
+
   <div class="row">
-    <div class="col-lg-4" id="reminder-paziente">Crea nuovo paziente nel sistema</div>
+    <div 
+    class="col-lg-4 fw-lighter" style="margin-left:  -20px;" id="reminder-paziente">
+    Crea nuovo paziente nel sistema
+    </div>
   </div>
+
+  
+  
   <div class="row" id="form-paziente">
     <div class="col-lg-4">
       <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
         <input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1">
-      </div>
-      <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon2"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Cognome" aria-describedby="basic-addon1">
-      </div>
-      <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon3"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Codice Fiscale" aria-describedby="basic-addon1">
-      </div>
-      <select class="form-select" aria-label="Default select example">
+    </div>
+    
+    <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
+        <input type="text" class="form-control" placeholder="Cognome" aria-label="Cognome" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-person-vcard"></i> </span>
+        <input type="text" class="form-control" placeholder="Codice Fiscale" aria-label="CF" aria-describedby="basic-addon1">
+    </div>
+      <select class="form-select" style="background-color: #f9f2ed;" aria-label="Default select example">
         <option selected>Sesso</option>
         <option value="1">Maschio</option>
         <option value="2">Femmina</option>
       </select>
     </div>
+
     <div class="col-lg-4">
+
       <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="Date" class="form-control" placeholder="Data Di Nascita" aria-describedby="basic-addon1">
-      </div>
-      <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
-      </div>
-      <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Telefono" aria-describedby="basic-addon1">
-      </div>
-      <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Indirizzo" aria-describedby="basic-addon1">
-      </div>
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-calendar"></i> </i> </span>
+        <input type="date" class="form-control" placeholder="Data di nascita" aria-label="Data di nascita" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-envelope-at"></i> </span>
+        <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-phone"></i> </span>
+        <input type="tel" class="form-control" placeholder="Telefono" aria-label="Telefono" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-house"></i> </span>
+      <input type="text" class="form-control" placeholder="Indirizzo" aria-label="Indirizzo" aria-describedby="basic-addon1">
+    </div>
+
     </div>
     <div class="col-lg-4">
       <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Numeri Utili" aria-describedby="basic-addon1">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-telephone-plus"></i> </span>
+        <input type="text" class="form-control" placeholder="Numeri Utili" aria-label="Numeri Utili" aria-describedby="basic-addon1">
       </div>
       <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Tipo Diabete" aria-describedby="basic-addon1">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-bandaid"></i> </span>
+        <input type="text" class="form-control" placeholder="Tipo Diabete" aria-label="Tipo Diabete" aria-describedby="basic-addon1">
       </div>
       <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Comordabilità" aria-describedby="basic-addon1">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-file-medical"></i> </span>
+        <input type="text" class="form-control" placeholder="Comorbilità" aria-label="Comorbilità" aria-describedby="basic-addon1">
       </div>
       <div class="input-group mb-3">
-        <span class="input-group-text" style="background-color: rgb(255, 255, 255);" id="basic-addon1"> <i class="bi bi-person"> </i> </span>
-        <input type="text" class="form-control" placeholder="Farmaci Assunti" aria-describedby="basic-addon1">
+        <span class="input-group-text" style="background-color: #f9f2ed;" id="basic-addon1"> <i class="bi bi-capsule"></i> </span>
+        <input type="text" class="form-control" placeholder="Farmaci Assunti" aria-label="Farmaci Assunti" aria-describedby="basic-addon1">
       </div>
     </div>
   </div>
+
+
+
   <div class="row">
-    <div class="col-lg-4" id="reminder-paziente">Crea Terapia</div>
+
+    <div class="col-lg-4 fw-lighter" style="margin-left: -15px;" id="reminder-paziente">Crea Terapia</div>
   </div>
+
   <div class="row" id="button-farmaci">
     <div class="col-lg-2">
       <div class="text pt-1 mb-5 pb-1">
-        <button type="button" class="btn btn-sm" id="cancella-selezionati">Cancella Selezionati</button>
+        <button type="button" class="btn btn-sm" id="cancella-selezionati" > <i class="bi bi-trash3"></i> CANCELLA SELEZIONATI</button>
       </div>
     </div>
     <div class="col-lg-2">
       <div class="text pt-1 mb-5 pb-1">
-        <button type="button" class="btn btn-sm" id="nuovo-farmaco">Nuovo Farmaco</button>
+        <button type="button" class="btn btn-sm" id="nuovo-farmaco"><i class="bi bi-plus"></i> NUOVO FARMACO</button>
       </div>
     </div>
     <div class="col-lg-8"></div>
   </div>
 
-  <div class="row" id="sezione-farmaci1">
-    <div class="col-lg-2">Farmaco</div>
-    <div class="col-lg-2">Dosaggio</div>
-    <div class="col-lg-2">Ora</div>
-    <div class="col-lg-2">Somministrazione</div>
-    <div class="col-lg-2">Note Aggiuntive</div>
-    <div class="col-lg-2">Modifica</div>
+  <div class="row fw-lighter" id="sezione-farmaci1">
+    <div class="col-lg-2">FARMACO</div>
+    <div class="col-lg-2">DOSAGGI</div>
+    <div class="col-lg-2">ORA</div>
+    <div class="col-lg-2">SOMMINISTRAZIONE</div>
+    <div class="col-lg-2">NOTE AGGIUNTIVE</div>
+    <div class="col-lg-2">MODIFICA</div>
   </div>
 
-  <div class="row" id="sezione-farmaci2">
+  <div class="row fw-normal" id="sezione-farmaci2">
     <div class="col-lg-2">
 
-      <p>Nome Farmaco</p>
-      <p>Nome Farmaco</p>
+      <p><input type="checkbox" id="farmaco1"> Nome Farmaco</p>
+      <p><input type="checkbox" id="farmaco1"> Nome Farmaco</p>
     </div>
     <div class="col-lg-2">
 
@@ -136,22 +185,23 @@
     </div>
     <div class="col-lg-2">
 
-      <a href="#" id="link-modifica">Modifica</a>
+      <a href="#" id="link-modifica"><i class="bi bi-pencil-square"></i></a>
       <p></p>
-      <a href="#" id="link-modifica">Modifica</a>
+      <a href="#" id="link-modifica"><i class="bi bi-pencil-square"></i></a>
     </div>
   </div>
   <div class="row" id="bottone-crea-row">
     <div class="col-lg-10"></div>
     <div class="col-lg-2">
       <div class="text pt-1 mb-5 pb-1">
-        <button type="button" class="btn btn-sm text-center" id="crea-button">Crea</button>
+        <button type="button" class="btn btn-sm text-center" id="crea-button">CREA</button>
       </div>
     </div>
   </div>
   </div>
 </div>
 </div>
+<br>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
