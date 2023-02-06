@@ -1,0 +1,58 @@
+nav{
+  background-color: #efd5a3;
+}
+
+#modifica-terapia{
+  background-color: #a5d8d9;
+  color: white;
+  font-size: 12px;
+  border-radius: 16px;
+  font: bold;
+  margin-top: 100px;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+#nome-paziente{
+  padding-top: 70px;
+  font-size: 18px;
+}
+
+#età-paziente{
+  font-size: 14px;
+}
+
+#terapia-attuale{
+  padding-top: 100px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#terapia-paziente{
+  font-size: 16px;
+}
+
+#grafico-glicemia{
+  padding-top: 120px;
+  font-weight: bold;
+}
+
+#riscontro-positivo{
+  background-color: #a5d8d9;
+  color: white;
+  font-size: 12px;
+  border-radius: 16px;
+  font: bold;
+  margin-top: 40px;
+}
+
+#feedback-ricevuti{
+  padding-top: 70px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#feedback-list{
+  font-weight: bold;
+  font-size: 15px;
+}
