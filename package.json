@@ -2,7 +2,7 @@
   "name": "vite",
   "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Vite.",
   "version": "0.0.0",
-  "homepage": "https://c01-glucoseguardian.github.io/web/",
+  "homepage": "https://glucoseguardian.it",
   "stackblitz": {
     "startCommand": "npm start"
   },
@@ -10,7 +10,7 @@
     "start": "vite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo glucoseguardian.it > src/dist/CNAME",
     "deploy": "gh-pages -d src/dist"
   },
   "devDependencies": {
