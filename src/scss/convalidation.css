@@ -24,7 +24,7 @@
   
   
   .navbar-brand{
-    font-family: Candara;
+    font-family: Candara, sans-serif;
     font-weight: bold;
   }
   #reminder-paziente{
@@ -39,7 +39,7 @@
     padding-top: 50px;
     padding-left: 25px;
     padding-right: 25px;
-    font-family: Candara;
+    font-family: Candara, sans-serif;
   }
   
   #button-farmaci{
@@ -52,19 +52,19 @@
     color: white;
     font-size: 12px;
     border-radius: 16px;
-    font: bold;
+    font-weight: bold;
     padding-left: 15px;
     padding-right: 15px;
   }
   
   #sezione-farmaci1{
-    font-family: Candara;
+    font-family: Candara, sans-serif;
     font-size: 14px;
     padding-left: 25px;
   }
   
   #sezione-farmaci2{
-    font-family: Candara;
+    font-family: Candara, sans-serif;
     font-weight: bold;
     font-size: 15px;
     padding-top: 5px;
@@ -86,7 +86,7 @@
     color: white;
     font-size: 14px;
     border-radius: 16px;
-    font: bold;
+    font-weight: bold;
     padding-left: 70px;
     padding-right: 70px;
     margin-left: -30px;
@@ -97,7 +97,7 @@
     color: white;
     font-size: 12px;
     border-radius: 13px;
-    font: bold;
+    font-weight: bold;
     padding-left: 70px;
     padding-right: 70px;
     margin-left: -30px;
