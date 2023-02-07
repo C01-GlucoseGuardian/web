@@ -6,6 +6,8 @@
         <title>GG Login</title>
         <link rel="stylesheet" href="../scss/styles.scss">
         <script type="module" src="../js/main.js"></script>
+        <script type="module" src="../js/login.js"></script>
+
     </head>
 <body>
 
@@ -34,11 +36,11 @@
                                     <p style="font-size: 20px;" class="fw-lighter">Accedi</p>
 
                                     <div class="input-group mb-3">
-                                        <input type="email" class="form-control" style="background-color: #f9f2ed;" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                                        <input type="email" id="email" class="form-control" style="background-color: #f9f2ed;" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
                                     </div>
 
                                     <div class="input-group mb-3">
-                                        <input type="password" class="form-control"  style="background-color: #f9f2ed;" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                                        <input type="password" id="password" class="form-control"  style="background-color: #f9f2ed;" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
                                     </div>
 
 
@@ -46,7 +48,7 @@
 
 
                                     <div class="text-center pt-1 mb-5 pb-1">
-                                        <button type="button" class="btn btn-success" style="background-color: #a5d8d9;">Avanti</button>
+                                        <button type="button" id="avantilogin" class="btn btn-success" style="background-color: #a5d8d9;">Avanti</button>
 
                                         <a class="text-muted" href="https://c01-glucoseguardian.github.io/login/contactanadmin.html">Password dimenticata?</a>
                                     </div>
