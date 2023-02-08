@@ -86,7 +86,7 @@ export function getDottoreByStato(stato) {
   });
 }
 
-export function getDottoreByStato(codiceFiscale) {
+export function getDottoreByPaziente(codiceFiscale) {
   return fetchResource("dottore/getByPaziente", {
     method: "POST",
     body: {
