@@ -3,11 +3,11 @@ import fetchResource from "./api_wrapper";
 export const login = (email, password) => {
   return fetchResource("auth/login", {
     method: "POST",
-    mode: 'cors',
+    mode: "cors",
     headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-  },
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
     body: {
       email,
       password,
