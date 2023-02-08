@@ -1,0 +1,35 @@
+body{
+  font-family: "Arial";
+  margin-top: 50px;
+}
+
+#navbar{
+  padding-left: 10px;
+}
+
+#pazienti-attivi{
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+#attributi-pazienti{
+  padding-top: 10px;
+  padding-left: 40px;
+  font-size: 14px;
+}
+#riempimento-pazienti{
+  padding-top: 5px;
+  padding-left: 40px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#button-dati{
+
+  color: white;
+  font-size: 12px;
+  border-radius: 16px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 15px;
+}
