@@ -27,7 +27,7 @@ input[type="date"] {
   font-family: Candara, sans-serif;
   font-weight: bold;
 }
-#reminder-paziente{
+#reminder-paziente, #reminder-terapia{
   padding-top: 30px;
   padding-left: 60px;
   font-size: 20px;
