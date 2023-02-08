@@ -1,16 +1,21 @@
 import fetchResource from "./api_wrapper";
 
-export function login(email, password) {
+export const login = (email, password) => {
   return fetchResource("auth/login", {
     method: "POST",
+    mode: 'cors',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+  },
     body: {
       email,
       password,
     },
   });
-}
+};
 
-export function saveDottore(
+export const saveDottore = (
   codiceFiscale,
   nome,
   cognome,
@@ -24,7 +29,7 @@ export function saveDottore(
   codiceAlbo,
   nomeStruttura,
   indirizzoStruttura
-) {
+) => {
   return fetchResource("dottore/save", {
     method: "POST",
     body: {
@@ -43,9 +48,9 @@ export function saveDottore(
       indirizzoStruttura,
     },
   });
-}
+};
 
-export function changePassword(password, newPassword) {
+export const changePassword = (password, newPassword) => {
   return fetchResource("auth/changePw", {
     method: "POST",
     body: {
@@ -54,9 +59,9 @@ export function changePassword(password, newPassword) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getTotpKey(password) {
+export const getTotpKey = (password) => {
   return fetchResource("auth/getTotpKey", {
     method: "POST",
     body: {
@@ -64,9 +69,9 @@ export function getTotpKey(password) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getDottore(codiceFiscale) {
+export const getDottore = (codiceFiscale) => {
   return fetchResource("dottore/get", {
     method: "POST",
     body: {
@@ -74,9 +79,9 @@ export function getDottore(codiceFiscale) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getDottoreByStato(stato) {
+export const getDottoreByStato = (stato) => {
   return fetchResource("dottore/getByStato", {
     method: "POST",
     body: {
@@ -84,9 +89,9 @@ export function getDottoreByStato(stato) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getDottoreByPaziente(codiceFiscale) {
+export const getDottoreByPaziente = (codiceFiscale) => {
   return fetchResource("dottore/getByPaziente", {
     method: "POST",
     body: {
@@ -94,15 +99,15 @@ export function getDottoreByPaziente(codiceFiscale) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getAllDottori() {
+export const getAllDottori = () => {
   return fetchResource("dottore/getAll", {
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function dottoreUpdateStato(codiceFiscale, stato) {
+export const dottoreUpdateStato = (codiceFiscale, stato) => {
   return fetchResource("dottore/updateStato", {
     method: "POST",
     body: {
@@ -111,9 +116,9 @@ export function dottoreUpdateStato(codiceFiscale, stato) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function savePaziente(
+export const savePaziente = (
   codiceFiscale,
   nome,
   cognome,
@@ -128,7 +133,7 @@ export function savePaziente(
   periodoDiMonitoraggio,
   numeriUtili,
   terapia
-) {
+) => {
   return fetchResource("paziente/save", {
     method: "POST",
     body: {
@@ -149,9 +154,9 @@ export function savePaziente(
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getPaziente(codiceFiscale) {
+export const getPaziente = (codiceFiscale) => {
   return fetchResource("paziente/get", {
     method: "POST",
     body: {
@@ -159,9 +164,9 @@ export function getPaziente(codiceFiscale) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getPazienteByDottore(codiceFiscale) {
+export const getPazienteByDottore = (codiceFiscale) => {
   return fetchResource("paziente/getByDottore", {
     method: "POST",
     body: {
@@ -169,9 +174,9 @@ export function getPazienteByDottore(codiceFiscale) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function findPaziente(query) {
+export const findPaziente = (query) => {
   return fetchResource("paziente/find", {
     method: "POST",
     body: {
@@ -179,9 +184,9 @@ export function findPaziente(query) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function findFarmaco(query) {
+export const findFarmaco = (query) => {
   return fetchResource("farmaco/find", {
     method: "POST",
     body: {
@@ -189,9 +194,9 @@ export function findFarmaco(query) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getFarmaco(id) {
+export const getFarmaco = (id) => {
   return fetchResource("farmaco/get", {
     method: "POST",
     body: {
@@ -199,9 +204,9 @@ export function getFarmaco(id) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getAssunzioneFarmaco(id) {
+export const getAssunzioneFarmaco = (id) => {
   return fetchResource("farmaco/get", {
     method: "POST",
     body: {
@@ -209,9 +214,9 @@ export function getAssunzioneFarmaco(id) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getAssunzioneFarmacoByTerapia(id) {
+export const getAssunzioneFarmacoByTerapia = (id) => {
   return fetchResource("farmaco/getByTerapia", {
     method: "POST",
     body: {
@@ -219,9 +224,9 @@ export function getAssunzioneFarmacoByTerapia(id) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getAssunzioneFarmacoByPaziente(codiceFiscale) {
+export const getAssunzioneFarmacoByPaziente = (codiceFiscale) => {
   return fetchResource("farmaco/getByPaziente", {
     method: "POST",
     body: {
@@ -229,9 +234,9 @@ export function getAssunzioneFarmacoByPaziente(codiceFiscale) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getLastGlicemia(idPaziente) {
+export const getLastGlicemia = (idPaziente) => {
   return fetchResource("glicemia/getLast", {
     method: "POST",
     body: {
@@ -239,9 +244,9 @@ export function getLastGlicemia(idPaziente) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getRangeGlicemia(idPaziente, start, end) {
+export const getRangeGlicemia = (idPaziente, start, end) => {
   return fetchResource("glicemia/getRange", {
     method: "POST",
     body: {
@@ -251,9 +256,9 @@ export function getRangeGlicemia(idPaziente, start, end) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getFeedBack(id) {
+export const getFeedBack = (id) => {
   return fetchResource("feedback/get", {
     method: "POST",
     body: {
@@ -261,9 +266,9 @@ export function getFeedBack(id) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getFeedBackByPaziente(codiceFiscale) {
+export const getFeedBackByPaziente = (codiceFiscale) => {
   return fetchResource("feedback/getByPaziente", {
     method: "POST",
     body: {
@@ -271,9 +276,9 @@ export function getFeedBackByPaziente(codiceFiscale) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getFeedBackByDottore(codiceFiscale) {
+export const getFeedBackByDottore = (codiceFiscale) => {
   return fetchResource("feedback/getByDottore", {
     method: "POST",
     body: {
@@ -281,9 +286,9 @@ export function getFeedBackByDottore(codiceFiscale) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function saveTutore(
+export const saveTutore = (
   codiceFiscale,
   nome,
   cognome,
@@ -294,7 +299,7 @@ export function saveTutore(
   sesso,
   relazioneDiParentela,
   pazienteList
-) {
+) => {
   return fetchResource("tutore/save", {
     method: "POST",
     body: {
@@ -311,9 +316,9 @@ export function saveTutore(
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getTutore(codiceFiscale) {
+export const getTutore = (codiceFiscale) => {
   return fetchResource("tutore/get", {
     method: "POST",
     body: {
@@ -321,9 +326,9 @@ export function getTutore(codiceFiscale) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getTutoreByPaziente(codiceFiscale) {
+export const getTutoreByPaziente = (codiceFiscale) => {
   return fetchResource("tutore/getByPaziente", {
     method: "POST",
     body: {
@@ -331,9 +336,9 @@ export function getTutoreByPaziente(codiceFiscale) {
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function sendNotifica(
+export const sendNotifica = (
   id,
   messaggio,
   data,
@@ -344,7 +349,7 @@ export function sendNotifica(
   tutoreDestinatario,
   adminDestinatario,
   dottoreDestinatario
-) {
+) => {
   return fetchResource("notifica/send", {
     method: "POST",
     body: {
@@ -361,10 +366,10 @@ export function sendNotifica(
     },
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};
 
-export function getNotifiche() {
+export const getNotifiche = () => {
   return fetchResource("notifica/send", {
     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   });
-}
+};

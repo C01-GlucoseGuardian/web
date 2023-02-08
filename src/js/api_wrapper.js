@@ -1,12 +1,5 @@
-// ------------------------------------------------------ //
-// Simple JavaScript API wrapper
-// https://muffinman.io/simple-javascript-api-wrapper
-// ------------------------------------------------------ //
+const API_URL = "https://api.glucoseguardian.it";
 
-// For demo purposes I'm using this awesome Star Wars API
-const API_URL = 'https://api.glucoseguardian.it';
-
-// Custom API error to throw
 function ApiError(message, data, status) {
   let response = null;
   let isObject = false;
@@ -23,7 +16,9 @@ function ApiError(message, data, status) {
   this.message = message;
   this.status = status;
   this.toString = function () {
-    return `${ this.message }\nResponse:\n${ isObject ? JSON.stringify(this.response, null, 2) : this.response }`;
+    return `${this.message}\nResponse:\n${
+      isObject ? JSON.stringify(this.response, null, 2) : this.response
+    }`;
   };
 }
 
@@ -47,6 +42,9 @@ const fetchResource = (path, userOptions = {}) => {
 
   // Build Url
   const url = `${ API_URL }/${ path }`;
+
+  // Detect is we are uploading a file
+  const isFile = options.body instanceof File;
 
   // Stringify JSON data
   // If body is not a file
