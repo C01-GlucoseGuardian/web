@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Nuovo Tutore</title>
         <script type="module" src="../js/main.js"></script>
+        <script type="module" src="../js/savetutore.js"></script>
     </head>
 <body style="background-color: #f7f2ed;">
 
@@ -41,43 +42,43 @@
 
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i class="bi bi-person"> </i> </span>
-                                    <input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control" id="nome" placeholder="Nome" aria-describedby="basic-addon1">
                                 </div>
                                 
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i class="bi bi-person"></i> </span>
-                                    <input type="text" class="form-control" placeholder="Cognome" aria-label="Cognome" aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control" id="cognome" placeholder="Cognome" aria-label="Cognome" aria-describedby="basic-addon1">
                                 </div>
                     
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i class="bi bi-person-vcard"></i></span>
-                                    <input type="text" class="form-control" placeholder="Codice Fiscale" aria-label="CF" aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control" id="codiceFiscale" placeholder="Codice Fiscale" aria-label="CF" aria-describedby="basic-addon1">
                                 </div>
 
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i class="bi bi-calendar"></i></span>
-                                    <input type="date" class="form-control" placeholder="Data di nascita" aria-label="Data di nascita" aria-describedby="basic-addon1">
+                                    <input type="date" class="form-control" id="dataNascita" placeholder="Data di nascita" aria-label="Data di nascita" aria-describedby="basic-addon1">
                                 </div>
             
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i class="bi bi-envelope-at"></i></span>
-                                    <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
                                 </div>
             
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i class="bi bi-phone"></i></span>
-                                    <input type="tel" class="form-control" placeholder="Telefono" aria-label="Telefono" aria-describedby="basic-addon1">
+                                    <input type="tel" class="form-control" id="telefono" placeholder="Telefono" aria-label="Telefono" aria-describedby="basic-addon1">
                                 </div>
             
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i class="bi bi-house"></i></span>
-                                    <input type="text" class="form-control" placeholder="Indirizzo" aria-label="Indirizzo" aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control" id="indirizzo" placeholder="Indirizzo" aria-label="Indirizzo" aria-describedby="basic-addon1">
                                 </div>
             
-                                <select class="form-select" style="background-color: #f9f2ed;" aria-label="Default select example">
+                                <select class="form-select" id="sesso" style="background-color: #f9f2ed;" aria-label="Default select example">
                                     <option selected>Sesso</option>
-                                    <option value="1">Maschio</option>
-                                    <option value="2">Femmina</option>
+                                    <option value="M">Maschio</option>
+                                    <option value="F">Femmina</option>
                                   </select>
                                 
 
@@ -88,7 +89,7 @@
                                 <div class="text-center pt-1 mb-5 pb-1">
                                     <a class="text-muted" style="padding-right: 400px;" href="../dataview/dashboard.html">&larr; Dashboard</a>
                                    
-                                    <button type="button" class="btn btn-success" style="background-color: #a5d8d9; margin-right: -10px; padding-left: 30px; padding-right: 30px;">Crea</button>
+                                    <button type="button" class="btn btn-success" id="crea-button" style="background-color: #a5d8d9; margin-right: -10px; padding-left: 30px; padding-right: 30px;">Crea</button>
 
                     
                                 </div>
