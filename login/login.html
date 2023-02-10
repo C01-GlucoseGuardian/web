@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>GG Login</title>
         
-      <script type="module" crossorigin src="/assets/bootstrap.esm-f64ea418.js"></script>
-      <link rel="stylesheet" href="/assets/bootstrap-2f2c8106.css">
+        
+      <script type="module" crossorigin src="/assets/login-16ba9a39.js"></script>
+      <link rel="modulepreload" crossorigin href="/assets/styles-fac82e35.js">
+      <link rel="modulepreload" crossorigin href="/assets/bootstrap.esm-19ee7221.js">
+      <link rel="modulepreload" crossorigin href="/assets/api_wrapper-35c8f065.js">
+      <link rel="modulepreload" crossorigin href="/assets/api-1d682227.js">
+      <link rel="stylesheet" href="/assets/styles-2f2c8106.css">
     </head>
 <body>
 
@@ -35,11 +40,11 @@
                                     <p style="font-size: 20px;" class="fw-lighter">Accedi</p>
 
                                     <div class="input-group mb-3">
-                                        <input type="email" class="form-control" style="background-color: #f9f2ed;" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                                        <input type="email" id="email" class="form-control" style="background-color: #f9f2ed;" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
                                     </div>
 
                                     <div class="input-group mb-3">
-                                        <input type="password" class="form-control"  style="background-color: #f9f2ed;" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                                        <input type="password" id="password" class="form-control"  style="background-color: #f9f2ed;" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
                                     </div>
 
 
@@ -47,7 +52,7 @@
 
 
                                     <div class="text-center pt-1 mb-5 pb-1">
-                                        <button type="button" class="btn btn-success" style="background-color: #a5d8d9;">Avanti</button>
+                                        <button type="button" id="avantilogin" class="btn btn-success" style="background-color: #a5d8d9;">Avanti</button>
 
                                         <a class="text-muted" href="../login/contactanadmin.html">Password dimenticata?</a>
                                     </div>

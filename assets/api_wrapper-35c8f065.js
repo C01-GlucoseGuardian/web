@@ -1,0 +1,3 @@
+const c="https://api.glucoseguardian.it";function a(i,n,r){let o=null,s=!1;try{o=JSON.parse(n),s=!0}catch{o=n}this.response=o,this.message=i,this.status=r,this.toString=function(){return`${this.message}
+Response:
+${s?JSON.stringify(this.response,null,2):this.response}`}}const f=(i,n={})=>{const s={...{},...n,headers:{...{},...n.headers}},u=`${c}/${i}`,l=s.body instanceof File;s.body&&typeof s.body=="object"&&!l&&(s.body=JSON.stringify(s.body));let t=null;return fetch(u,s).then(e=>(t=e,t.status,t.status<200||t.status>=300?t.text():t.json())).then(e=>{if(t.status<200||t.status>=300)throw e;return e}).catch(e=>{throw t?new a(`Request failed with status ${t.status}.`,e,t.status):new a(e.toString(),null,"REQUEST_FAILED")})};export{f};
