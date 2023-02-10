@@ -27,7 +27,13 @@ input[type="date"] {
   font-family: Candara, sans-serif;
   font-weight: bold;
 }
-#reminder-paziente, #reminder-terapia{
+#reminder-paziente, #reminder-farmaci{
+  padding-top: 30px;
+  padding-left: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#reminder-terapia{
   padding-top: 30px;
   padding-left: 60px;
   font-size: 20px;
@@ -47,20 +53,16 @@ input[type="date"] {
   padding-left: 25px;
 }
 
-#cancella-selezionati, #nuovo-farmaco{
-  background-color: #a5d8d9;
-  color: white;
-  font-size: 12px;
-  border-radius: 16px;
-  font-weight: bold;
-  padding-left: 15px;
-  padding-right: 15px;
+
+#ricerca-farmaco{
+  padding-left: 10px;
 }
 
 #sezione-farmaci1{
   font-family: Candara, sans-serif;
   font-size: 14px;
   padding-left: 25px;
+  padding-top: 25px;
 }
 
 #sezione-farmaci2{
@@ -94,4 +96,8 @@ input[type="date"] {
 
 #form-username-logo{
   padding-left: 950px;
+}
+
+#mostra-farmaci{
+  padding-left: 20px;
 }

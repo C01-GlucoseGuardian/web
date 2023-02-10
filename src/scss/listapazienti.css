@@ -17,7 +17,7 @@ body{
   padding-left: 40px;
   font-size: 14px;
 }
-#riempimento-pazienti{
+#nome-paziente, #cognome-paziente, #tipo-diabete{
   padding-top: 5px;
   padding-left: 40px;
   font-size: 15px;
