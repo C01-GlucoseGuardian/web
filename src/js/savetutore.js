@@ -43,15 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const telefono = document.getElementById("telefono").value;
     const email = document.getElementById("email").value;
     const sesso = document.getElementById("sesso").value;
-    const listaPazienti = document.getElementById("codiceFiscalePaziente").value.split(
-        /, ?/).map(x => {
-      const codiceFiscale = {}
-      ;codiceFiscale.codiceFiscale= x;
-      return codiceFiscale;
-    });
+
     let risultato = saveTutore(codiceFiscale, nome, cognome, dataNascita,
         indirizzo, telefono,
-        email, sesso, listaPazienti)
+        email, sesso)
     risultato.then(risposta => alert(risposta.msg)).catch(
         error => alert(error.response.msg))
   });
