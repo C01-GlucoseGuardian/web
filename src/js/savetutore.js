@@ -1,6 +1,7 @@
-import  {fetchResource} from "./api_wrapper";
+import {fetchResource} from "./api_wrapper";
+
 document.addEventListener('DOMContentLoaded', () => {
-  function savePaziente(
+  function saveTutore(
       codiceFiscale,
       nome,
       cognome,
@@ -9,8 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       telefono,
       email,
       sesso,
-      relazioneParentela,
-      listaPazienti
+      pazienteList
   ) {
     return fetchResource("tutore/save", {
       method: "POST",
@@ -29,24 +29,30 @@ document.addEventListener('DOMContentLoaded', () => {
         telefono,
         email,
         sesso,
-        relazioneParentela,
-        listaPazienti
+        pazienteList
       }
     });
   }
-
 
   document.getElementById("crea-button").addEventListener("click", function () {
     const codiceFiscale = document.getElementById("codiceFiscale").value;
     const nome = document.getElementById("nome").value;
     const cognome = document.getElementById("cognome").value;
-    const dataNascita = "01/02/2023"//document.getElementById("dataNascita").value;
+    const dataNascita = document.getElementById("dataNascita").value;
     const indirizzo = document.getElementById("indirizzo").value;
     const telefono = document.getElementById("telefono").value;
     const email = document.getElementById("email").value;
     const sesso = document.getElementById("sesso").value;
-    const relazioneParentela = "cugino";
-    const listaPazienti = {pazienteList: []};
-    savePaziente(codiceFiscale, nome, cognome, dataNascita, indirizzo, telefono, email, sesso, relazioneParentela, listaPazienti)
+    const listaPazienti = document.getElementById("codiceFiscalePaziente").value.split(
+        /, ?/).map(x => {
+      const codiceFiscale = {}
+      ;codiceFiscale.codiceFiscale= x;
+      return codiceFiscale;
+    });
+    let risultato = saveTutore(codiceFiscale, nome, cognome, dataNascita,
+        indirizzo, telefono,
+        email, sesso, listaPazienti)
+    risultato.then(risposta => alert(risposta.msg)).catch(
+        error => alert(error.response.msg))
   });
 })

@@ -54,8 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const telefono = document.getElementById("signupTelefono").value;
     const email = document.getElementById("signupMail").value;
     const password = document.getElementById("signupPassword").value;
-    const confermaPassword = document.getElementById(
-        "signupConfirmPassword").value;
     const sesso = document.getElementById("signupSesso").value;
     const specializzazione = document.getElementById(
         "signupSpecializzazione").value;
@@ -64,34 +62,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const indirizzoStruttura = document.getElementById(
         "signupIndirizzoStruttura").value;
 
-    if (
-        codiceFiscale &&
-        nome &&
-        cognome &&
-        dataNascita &&
-        indirizzo &&
-        telefono &&
-        email &&
-        password &&
-        sesso &&
-        specializzazione &&
-        codiceAlbo &&
-        nomeStruttura &&
-        indirizzoStruttura &&
-        confermaPassword
-    ) {
-      if (password !== confermaPassword) {
-        alert("Le password non coincidono");
-      } else {
+
+
         let risultato = saveDottore(codiceFiscale, nome, cognome, dataNascita,
             indirizzo, telefono, email, password, sesso, specializzazione,
             codiceAlbo, nomeStruttura, indirizzoStruttura)
         risultato.then(risposta => alert(risposta.msg)).catch(
             error => alert(error.response.msg))
-      }
-    } else {
-      alert("Completa tutti i campi");
-    }
+
+
 
   });
 })
