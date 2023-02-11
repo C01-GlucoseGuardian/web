@@ -14,17 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         html += `
           <div class="row fw-normal" id="pazienti">
-            <div class="col-sm-2" id="nome-paziente">${paziente.nome}</div>
-            <div class="col-sm-2" id="cognome-paziente">${paziente.cognome}</div>
-            <div class="col-sm-2" id="tipo-diabete">${paziente.tipoDiabete}</div>
+            <div class="col-sm-2" id="nome-paziente"><br>${paziente.nome}</div>
+            <div class="col-sm-2" id="cognome-paziente"><br>${paziente.cognome}</div>
+            <div class="col-sm-2" id="tipo-diabete"><br>${paziente.tipoDiabete}</div>
             
             <div class="col-sm-2">
-              <a href="#" id="sezione-bottone-visualizza">
+              <a href="#" id="sezione-bottone-visualizza"><br>
                 <button type="button" class="btn btn-sm text-center" id="button-dati-${i}" onclick="visualizzaDati(${i})" style="background-color: #a5d8d9;color: white;font-size: 12px;border-radius: 13px;font-weight: bold;padding-left: 50px;padding-right: 50px;margin-left: -30px;">Visualizza Dati</button>
               </a>
             </div>
             <div class="col-sm-2">
-              <a href="#" id="sezione-bottone-agenda">
+              <a href="#" id="sezione-bottone-agenda"><br>
                 <button type="button" class="btn btn-sm text-center" id="button-paziente-${i}" onclick="visualizzaAgenda(${i})" style="background-color: #a5d8d9;color: white;font-size: 12px;border-radius: 13px;font-weight: bold;padding-left: 70px;padding-right: 70px;margin-left: -30px;">Agenda</button>
               </a>
             </div>
