@@ -127,6 +127,21 @@ document.addEventListener('DOMContentLoaded', () => {
             noteAggiuntive: noteAggiuntive
           }
       )
+
+      if (!dosaggio) {
+        alert("Il campo dosaggio non può essere vuoto")
+      }
+      if (!checkTimeFormat(ora)) {
+        alert("Il formato dell'ora non è valido")
+      }
+      if (!somministrazione) {
+        alert("Il campo somministrazione non può essere vuoto")
+      }
+      if (noteAggiuntive.length > 300) {
+        alert(
+            "Il campo note aggiuntive aggiuntive supera i caratteri consentiti")
+      }
+
       document.getElementById("nomeFarmaco").value = "";
       document.getElementById("dosaggio").value = "";
       document.getElementById("ora").value = "";
@@ -137,4 +152,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.getElementById("aggiunta-terapia").onclick = salvaTerapia;
+
+  function checkTimeFormat(time) {
+    var timeRegex = /^([0-1][0-9]|2[0-3]):[0-5][0-9]$/;
+    return timeRegex.test(time);
+  }
 })
