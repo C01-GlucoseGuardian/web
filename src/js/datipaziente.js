@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(terapia => {
       console.log(terapia)
       let html = '';
-      for (let i = 0; i < terapia.farmaci.length; i++){
+      for (let i = 0; i < terapia.farmaci.length; i++) {
         let farmaco = terapia.farmaci[i];
         //alert(JSON.stringify(farmaco))
         //alert(JSON.stringify(farmaco.nomeFarmaco))
@@ -33,13 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
           `;
       }
 
-        //let html = '';
-        //for (let i) {
+      //let html = '';
+      //for (let i) {
 
-
-
-        //}
-
+      //}
 
       document.getElementById("terapia-paziente").innerHTML = html;
 

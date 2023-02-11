@@ -21,16 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })();
 
-
-
-
   (function mostraTerapia() {
     let codiceFiscale = localStorage.getItem("cfPaziente");
     getTerapiaByPaziente(codiceFiscale)
     .then(terapia => {
 
       let html = '';
-      for (let i = 0; i < terapia.farmaci.length; i++){
+      for (let i = 0; i < terapia.farmaci.length; i++) {
         let farmaco = terapia.farmaci[i];
         //alert(JSON.stringify(farmaco))
         //alert(JSON.stringify(farmaco.nomeFarmaco))
@@ -71,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
   }
+
   document.getElementById("cerca-button").onclick = find;
 
   function salvaTerapia() {
@@ -97,30 +95,45 @@ document.addEventListener('DOMContentLoaded', () => {
             noteAggiuntive: noteAggiuntive
           }
       )
+
+      if (!dosaggio) {
+        alert("Il campo dosaggio non può essere vuoto")
+      }
+      if (!checkTimeFormat(ora)) {
+        alert("Il formato dell'ora non è valido")
+      }
+      if (!somministrazione) {
+        alert("Il campo somministrazione non può essere vuoto")
+      }
+      if (noteAggiuntive.length > 300) {
+        alert(
+            "Il campo note aggiuntive aggiuntive supera i caratteri consentiti")
+      }
+
       document.getElementById("nomeFarmaco").value = "";
       document.getElementById("dosaggio").value = "";
       document.getElementById("ora").value = "";
       document.getElementById("somministrazione").value = "";
       document.getElementById("noteAggiuntive").value = "";
-      //console.log(listaFarmaco)
+
     })
 
   }
+
   document.getElementById("aggiunta-terapia").onclick = salvaTerapia;
 
   function aggiornaTerapia() {
     let cf = localStorage.getItem("cfPaziente");
-let risultato = updateTerapia(cf, listaFarmaco);
+    let risultato = updateTerapia(cf, listaFarmaco);
     risultato.then(risposta => alert(risposta.msg)).catch(
         error => alert(error.response.msg))
-      console.log(listaFarmacoasp
-      )
-    //location.reload();
+    console.log(listaFarmacoasp
+    )
+    location.reload();
 
   }
 
   document.getElementById("aggiorna-terapia").onclick = aggiornaTerapia;
-
 
   function calcolaEta(dataNascita) {
     let parts = dataNascita.split("/");
@@ -135,6 +148,11 @@ let risultato = updateTerapia(cf, listaFarmaco);
       eta--;
     }
     return eta;
+  }
+
+  function checkTimeFormat(time) {
+    var timeRegex = /^([0-1][0-9]|2[0-3]):[0-5][0-9]$/;
+    return timeRegex.test(time);
   }
 
 })

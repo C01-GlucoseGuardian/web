@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     getPazienteByDottore(codiceFiscale)
 
-
     .then(listPazienti => {
       let html = '';
       for (let paziente of listPazienti.list) {

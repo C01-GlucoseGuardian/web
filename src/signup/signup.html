@@ -1,139 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SignUp</title>
-    <script type="module" src="../js/main.js"></script>
-    <script type="module" src="../js/signup.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SignUp</title>
+  <script type="module" src="../js/main.js"></script>
+  <script type="module" src="../js/signup.js"></script>
 
 </head>
 <body>
 
 <section class="h-100 gradient-form" style="background-color: #f7f2ed">
-    <div class="container py-5 h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-xl-10">
-                <div class="card rounded-5 text-black" style="background-color: #f7f2ed;">
-                    <div class="row g-0">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-5 text-black" style="background-color: #f7f2ed;">
+          <div class="row g-0">
 
 
+            <div class="col-lg-6 ">
+              <div class="card-body p-md-6 mx-md-5 ">
 
 
+                <form>
+                  <p style="font-size: 20px;" class="fw-lighter">Registrazione Dottore</p>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" style="background-color: #f7f2edf7;"><i
+                        class="bi bi-person"></i></span>
+                    <input id="signupNome" type="text" style="background-color: #f7f2edf7;"
+                           class="form-control" placeholder="Nome" aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" style="background-color: #f7f2edf7;"><i
+                        class="bi bi-person"></i></span>
+                    <input id="signupCognome" type="text" style="background-color: #f7f2edf7;"
+                           class="form-control" placeholder="Cognome" aria-label="Cognome"
+                           aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" style="background-color: #f7f2edf7;"><i
+                        class="bi bi-person-vcard"></i></span>
+                    <input id="signupCodiceFiscale" type="text" style="background-color: #f7f2edf7;"
+                           class="form-control" placeholder="Codice Fiscale"
+                           aria-label="Codice Fiscale" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="div">
+                    <select class="form-select" id="signupSesso" style="background-color: #f9f2ed;"
+                            aria-label="Default select example">
+                      <option selected>Sesso</option>
+                      <option value="M">Maschio</option>
+                      <option value="F">Femmina</option>
+                    </select>
+                    <br>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" style="background-color: #f7f2edf7;"> <i
+                        class="bi bi-calendar"></i></span>
+                    <input id="signupDataNascita" type="text" style="background-color: #f7f2edf7;"
+                           class="form-control" placeholder="Data di nascita DD/MM/YYYY"
+                           aria-label="Data di nascita" aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" style="background-color: #f7f2edf7;"> <i
+                        class="bi bi-search"></i></span>
+                    <input id="signupSpecializzazione" type="text"
+                           style="background-color: #f7f2edf7;" class="form-control"
+                           placeholder="Specializzazione" aria-label="Specializzazione"
+                           aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" style="background-color: #f7f2edf7;"><i
+                        class="bi bi-123"></i></span>
+                    <input id="signupCodIscAlbo" type="text" style="background-color: #f7f2edf7;"
+                           class="form-control" placeholder="Codice Iscrizione Albo"
+                           aria-label="Codice Iscrizione Albo" aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" style="background-color: #f7f2edf7;"><i
+                        class="bi bi-envelope-at"></i></span>
+                    <input id="signupMail" type="email" style="background-color: #f7f2edf7;"
+                           class="form-control" placeholder="Email" aria-label="Email"
+                           aria-describedby="basic-addon2">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" style="background-color: #f7f2edf7;"> <i
+                        class="bi bi-phone"></i></span>
+                    <input id="signupTelefono" type="tel" style="background-color: #f7f2edf7;"
+                           class="form-control" placeholder="Nr. Telefono" aria-label="Nr. Telefono"
+                           aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" style="background-color: #f7f2edf7;">  <i
+                        class="bi bi-house"></i></span>
+                    <input id="signupNomeStruttura" type="text" style="background-color: #f7f2edf7;"
+                           class="form-control" placeholder="Nome Struttura"
+                           aria-label="Nome Struttura" aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" style="background-color: #f7f2edf7;">  <i
+                        class="bi bi-house"></i></span>
+                    <input id="signupIndirizzoStruttura" type="text"
+                           style="background-color: #f7f2edf7;" class="form-control"
+                           placeholder="Indirizzo Struttura" aria-label="Indirizzo Struttura"
+                           aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" style="background-color: #f7f2edf7;">  <i
+                        class="bi bi-house"></i></span>
+                    <input id="signupIndirizzo" type="text" style="background-color: #f7f2edf7;"
+                           class="form-control" placeholder="Indirizzo" aria-label="Indirizzo"
+                           aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" style="background-color: #f7f2edf7;">  <i
+                        class="bi bi-key-fill"></i></span>
+                    <input id="signupPassword" type="password" style="background-color: #f7f2edf7;"
+                           class="form-control" placeholder="Password" aria-label="Password"
+                           aria-describedby="basic-addon1">
+                  </div>
 
 
-                        <div class="col-lg-6 ">
-                            <div class="card-body p-md-6 mx-md-5 ">
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <button id="signupBtn" type="button" class="btn btn-success"
+                            style="background-color: #a5d8d9;">Avanti
+                    </button>
+                    <a class="text-muted" href="../login/login.html">Ho già un account</a>
 
 
-                                <form>
-                                    <p style="font-size: 20px;" class="fw-lighter">Registrazione Dottore</p>
-
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" style="background-color: #f7f2edf7;" ><i class="bi bi-person"></i></span>
-                                        <input id="signupNome" type="text" style="background-color: #f7f2edf7;" class="form-control" placeholder="Nome" aria-describedby="basic-addon1">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" style="background-color: #f7f2edf7;" ><i class="bi bi-person"></i></span>
-                                        <input id="signupCognome" type="text" style="background-color: #f7f2edf7;" class="form-control" placeholder="Cognome" aria-label="Cognome" aria-describedby="basic-addon1">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" style="background-color: #f7f2edf7;" ><i class="bi bi-person-vcard"></i></span>
-                                        <input id="signupCodiceFiscale" type="text" style="background-color: #f7f2edf7;" class="form-control" placeholder="Codice Fiscale" aria-label="Codice Fiscale" aria-describedby="basic-addon1">
-                                    </div>
-                                    <div class="div">
-                                    <select class="form-select" id="signupSesso" style="background-color: #f9f2ed;" aria-label="Default select example">
-                                        <option selected>Sesso</option>
-                                        <option value="M">Maschio</option>
-                                        <option value="F">Femmina</option>
-                                    </select>
-                                    <br>
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" style="background-color: #f7f2edf7;" > <i class="bi bi-calendar"></i></span>
-                                        <input id="signupDataNascita" type="text" style="background-color: #f7f2edf7;" class="form-control" placeholder="Data di nascita DD/MM/YYYY" aria-label="Data di nascita" aria-describedby="basic-addon1">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" style="background-color: #f7f2edf7;" > <i class="bi bi-search"></i></span>
-                                        <input id="signupSpecializzazione" type="text" style="background-color: #f7f2edf7;" class="form-control" placeholder="Specializzazione" aria-label="Specializzazione" aria-describedby="basic-addon1">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" style="background-color: #f7f2edf7;" ><i class="bi bi-123"></i></span>
-                                        <input id="signupCodIscAlbo" type="text" style="background-color: #f7f2edf7;" class="form-control" placeholder="Codice Iscrizione Albo" aria-label="Codice Iscrizione Albo" aria-describedby="basic-addon1">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" style="background-color: #f7f2edf7;" ><i class="bi bi-envelope-at"></i></span>
-                                        <input id="signupMail" type="email" style="background-color: #f7f2edf7;" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" style="background-color: #f7f2edf7;" > <i class="bi bi-phone"></i></span>
-                                        <input id="signupTelefono" type="tel" style="background-color: #f7f2edf7;" class="form-control" placeholder="Nr. Telefono" aria-label="Nr. Telefono" aria-describedby="basic-addon1">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" style="background-color: #f7f2edf7;" >  <i class="bi bi-house"></i></span>
-                                        <input id="signupNomeStruttura" type="text" style="background-color: #f7f2edf7;" class="form-control" placeholder="Nome Struttura" aria-label="Nome Struttura" aria-describedby="basic-addon1">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" style="background-color: #f7f2edf7;" >  <i class="bi bi-house"></i></span>
-                                        <input id="signupIndirizzoStruttura" type="text" style="background-color: #f7f2edf7;" class="form-control" placeholder="Indirizzo Struttura" aria-label="Indirizzo Struttura" aria-describedby="basic-addon1">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" style="background-color: #f7f2edf7;" >  <i class="bi bi-house"></i></span>
-                                        <input id="signupIndirizzo" type="text" style="background-color: #f7f2edf7;" class="form-control" placeholder="Indirizzo" aria-label="Indirizzo" aria-describedby="basic-addon1">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" style="background-color: #f7f2edf7;" >  <i class="bi bi-key-fill"></i></span>
-                                        <input id="signupPassword" type="password" style="background-color: #f7f2edf7;" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
-                                    </div>
+                  </div>
 
 
+                </form>
 
-
-
-
-
-
-                                    <div class="text-center pt-1 mb-5 pb-1">
-                                        <button id="signupBtn" type="button" class="btn btn-success" style="background-color: #a5d8d9;">Avanti</button>
-                                        <a class="text-muted" href="../login/login.html">Ho già un account</a>
-
-
-                                    </div>
-
-
-
-
-                                </form>
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 d-flex flex-column align-items-center gradient-custom-2">
-
-                            <p style="font-size: 35px; color: #a2d5d8; padding-top: 33px;"  class="mt-3 mb-6 pb-4 text-center" >Glucose Guardian</p>
-
-
-                            <img src="../images/logoGlucoseGuardian.png" style="width: 350px; padding-top: 22px; margin-right: 50px;" alt="logoGlucoseGuardian">
-
-                        </div>
-
-
-                    </div>
-                </div>
+              </div>
             </div>
+
+            <div class="col-lg-6 d-flex flex-column align-items-center gradient-custom-2">
+
+              <p style="font-size: 35px; color: #a2d5d8; padding-top: 33px;"
+                 class="mt-3 mb-6 pb-4 text-center">Glucose Guardian</p>
+
+
+              <img src="../images/logoGlucoseGuardian.png"
+                   style="width: 350px; padding-top: 22px; margin-right: 50px;"
+                   alt="logoGlucoseGuardian">
+
+            </div>
+
+
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
 </body>

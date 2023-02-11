@@ -1,109 +1,115 @@
-.navbar{
-    background-color: #f8f2ed;
-  
-  }
-  #nav-paziente{
-    padding-left: 35px;
-  }
-  #nav-admin{
-    padding-right: 35px;
-  }
-  
-  input[type="text"] {
-    background-color: #f9f2ed;
-  }
-  input[type="email"] {
-    background-color: #f9f2ed;
-  }
-  input[type="tel"] {
-    background-color: #f9f2ed;
-  }
-  input[type="date"] {
-    background-color: #f9f2ed;
-  }
-  
-  
-  .navbar-brand{
-    font-family: Arial;
-    font-weight: bold;
-  }
-  #reminder-paziente{
-    padding-top: 30px;
-    padding-left: 60px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  
-  #form-paziente{
-    padding-top: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-family: Candara, sans-serif;
-  }
-  
-  #button-farmaci{
-    padding-top: 20px;
-    padding-left: 25px;
-  }
-  
-  #cancella-selezionati, #nuovo-farmaco{
-    background-color: #a5d8d9;
-    color: white;
-    font-size: 12px;
-    border-radius: 16px;
-    font-weight: bold;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  #proprietà-dottore{
-    font-family: Arial;
-    font-size: 14px;
-    padding-left: 10px;
-  }
-  
-  #dati-dottore{
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 15px;
-    padding-top: 5px;
-    padding-left: 25px;
-  }
-  
-  #link-modifica{
-    text-decoration: none;
-    color: black;
-  }
-  
-  #bottone-crea-row{
-    padding-top: 40px;
-    padding-left: 60px;
-  }
-  
-  #crea-button{
-    background-color: #a5d8d9;
-    color: white;
-    font-size: 14px;
-    border-radius: 16px;
-    font-weight: bold;
-    padding-left: 70px;
-    padding-right: 70px;
-    margin-left: -30px;
-  }
+.navbar {
+  background-color: #f8f2ed;
+
+}
+
+#nav-paziente {
+  padding-left: 35px;
+}
+
+#nav-admin {
+  padding-right: 35px;
+}
+
+input[type="text"] {
+  background-color: #f9f2ed;
+}
+
+input[type="email"] {
+  background-color: #f9f2ed;
+}
+
+input[type="tel"] {
+  background-color: #f9f2ed;
+}
+
+input[type="date"] {
+  background-color: #f9f2ed;
+}
 
 
-  .btn btn-sm{
-    background-color: #a5d8d9;
-    color: white;
-    font-size: 12px;
-    border-radius: 13px;
-    font-weight: bold;
-    padding-left: 70px;
-    padding-right: 70px;
-    margin-left: -30px;
-  }
+.navbar-brand {
+  font-family: Arial;
+  font-weight: bold;
+}
 
-  #css-nome{
-    padding-left: 10px;
-  }
+#reminder-paziente {
+  padding-top: 30px;
+  padding-left: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+#form-paziente {
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: Candara, sans-serif;
+}
+
+#button-farmaci {
+  padding-top: 20px;
+  padding-left: 25px;
+}
+
+#cancella-selezionati, #nuovo-farmaco {
+  background-color: #a5d8d9;
+  color: white;
+  font-size: 12px;
+  border-radius: 16px;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#proprietà-dottore {
+  font-family: Arial;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+#dati-dottore {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-left: 25px;
+}
+
+#link-modifica {
+  text-decoration: none;
+  color: black;
+}
+
+#bottone-crea-row {
+  padding-top: 40px;
+  padding-left: 60px;
+}
+
+#crea-button {
+  background-color: #a5d8d9;
+  color: white;
+  font-size: 14px;
+  border-radius: 16px;
+  font-weight: bold;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-left: -30px;
+}
+
+
+.btn btn-sm {
+  background-color: #a5d8d9;
+  color: white;
+  font-size: 12px;
+  border-radius: 13px;
+  font-weight: bold;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-left: -30px;
+}
+
+#css-nome {
+  padding-left: 10px;
+}

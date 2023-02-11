@@ -1,13 +1,13 @@
-import { getDottoreByStato } from "./api";
-import { dottoreUpdateStato } from "./api";
+import {getDottoreByStato} from "./api";
+import {dottoreUpdateStato} from "./api";
 
 document.addEventListener('DOMContentLoaded', () => {
   let i = 0;
-  (function getDottore(){
+  (function getDottore() {
     getDottoreByStato(0)
     .then(listDottori => {
       let html = '';
-      for(let dottore of listDottori.list){
+      for (let dottore of listDottori.list) {
 
         html += `
           <div class="row fw-normal" id="dati-dottore">
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById("dati-dottore").innerHTML = html;
     });
   })();
-  window.approva = function(id){
+  window.approva = function (id) {
     getDottoreByStato(0)
     .then(listDottori => {
       let dottore = listDottori.list[id];
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
   };
-  window.rimuovi = function(id){
+  window.rimuovi = function (id) {
     getDottoreByStato(0)
     .then(listDottori => {
       let dottore = listDottori.list[id];
