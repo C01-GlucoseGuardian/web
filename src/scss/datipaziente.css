@@ -5,12 +5,24 @@ nav{
 #modifica-terapia{
   background-color: #a5d8d9;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 16px;
   font-weight: bold;
   margin-top: 100px;
   padding-left: 20px;
   padding-right: 15px;
+}
+
+#associa-tutore{
+  background-color: #a5d8d9;
+  color: white;
+  font-size: 14px;
+  border-radius: 16px;
+  font-weight: bold;
+  margin-top: 100px;
+  padding-left: 20px;
+  padding-right: 15px;
+  margin-left: 80px;
 }
 
 #nome-paziente{

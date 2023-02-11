@@ -7,6 +7,8 @@
 
   <script type="module" src="../js/main.js"></script>
   <script type="module" src="../js/graph.js"></script>
+  <script type="module" src="../js/datipaziente.js"></script>
+  <script type="module" src="../js/modificaterapia.js"></script>
 </head>
 <body>
 
@@ -17,25 +19,28 @@
 </nav>
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-9">
+  <div class="row" id="mostraPaziente">
+    <div class="col-md-7">
       <p id="nome-paziente">Nome Paziente</p>
-      <p id="età-paziente">Età paziente</p>
+      <p id="eta-paziente">Età paziente</p>
     </div>
-    <div class="col-md-3">
-      <button type="button" class="btn btn-sm" id="modifica-terapia">MODIFICA TERAPIA</button>
+    <div class="col-md-5">
+      <button type="button" class="btn btn-sm" id="modifica-terapia"><a href="modificaterapia.html">MODIFICA
+        TERAPIA</a></button>
+      <button type="button" class="btn btn-sm" id="associa-tutore">ASSOCIA TUTORE</button>
     </div>
   </div>
   <div class="row">
     <br>
-    <div class="col-md-9" id="grafico-glicemia">
+    <div class="col-md-7" id="grafico-glicemia">
       <p>Andamento Della Glicemia</p>
       <canvas id="myChart" style="width:100%;max-width:750px; padding-left: 5px"></canvas>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-5">
       <p id="terapia-attuale">TERAPIA ATTUALE:</p>
       <p id="terapia-paziente">Terapia in atto...</p>
-      <button type="button" class="btn btn-sm" id="riscontro-positivo">COMUNICA RISCONTRO POSITIVO</button>
+      <button type="button" class="btn btn-sm" id="riscontro-positivo">COMUNICA RISCONTRO POSITIVO
+      </button>
       <p id="feedback-ricevuti">ULTIMI FEEDBACK RICEVUTI</p>
       <p id="feedback-list">Feedback list...</p>
     </div>
