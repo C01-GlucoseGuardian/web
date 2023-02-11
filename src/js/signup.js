@@ -62,15 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const indirizzoStruttura = document.getElementById(
         "signupIndirizzoStruttura").value;
 
-
-
-        let risultato = saveDottore(codiceFiscale, nome, cognome, dataNascita,
-            indirizzo, telefono, email, password, sesso, specializzazione,
-            codiceAlbo, nomeStruttura, indirizzoStruttura)
-        risultato.then(risposta => alert(risposta.msg)).catch(
-            error => alert(error.response.msg))
-
-
+    let risultato = saveDottore(codiceFiscale, nome, cognome, dataNascita,
+        indirizzo, telefono, email, password, sesso, specializzazione,
+        codiceAlbo, nomeStruttura, indirizzoStruttura)
+    risultato.then(risposta => alert(risposta.msg)).catch(
+        error => alert(error.response.msg))
 
   });
 })

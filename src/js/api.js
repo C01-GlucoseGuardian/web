@@ -261,9 +261,11 @@ export const getAssunzioneFarmacoByPaziente = (codiceFiscale) => {
     body: {
       codiceFiscale,
     },
-    headers: {Accept: "application/json",
+    headers: {
+      Accept: "application/json",
       "Content-Type": "application/json",
-      Authorization: "Bearer " + localStorage.getItem("token")},
+      Authorization: "Bearer " + localStorage.getItem("token")
+    },
   });
 };
 
@@ -414,11 +416,12 @@ export const getTerapiaByPaziente = (codiceFiscale) => {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-      Authorization: "Bearer " + localStorage.getItem("token")},
+      Authorization: "Bearer " + localStorage.getItem("token")
+    },
   });
 }
 
-export const updateTerapia = (idPaziente, farmaci) =>{
+export const updateTerapia = (idPaziente, farmaci) => {
   return fetchResource("terapia/update", {
     method: "POST",
     body: {
@@ -428,6 +431,7 @@ export const updateTerapia = (idPaziente, farmaci) =>{
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-      Authorization: "Bearer " + localStorage.getItem("token")},
+      Authorization: "Bearer " + localStorage.getItem("token")
+    },
   });
 }

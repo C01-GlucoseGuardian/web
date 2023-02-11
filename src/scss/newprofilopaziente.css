@@ -1,39 +1,46 @@
-.navbar{
+.navbar {
   background-color: #f8f2ed;
 
 }
-#nav-paziente{
+
+#nav-paziente {
   padding-left: 35px;
 }
-#nav-admin{
+
+#nav-admin {
   padding-right: 35px;
 }
 
 input[type="text"] {
   background-color: #f9f2ed;
 }
+
 input[type="email"] {
   background-color: #f9f2ed;
 }
+
 input[type="tel"] {
   background-color: #f9f2ed;
 }
+
 input[type="date"] {
   background-color: #f9f2ed;
 }
 
 
-.navbar-brand{
+.navbar-brand {
   font-family: Candara, sans-serif;
   font-weight: bold;
 }
-#reminder-paziente, #reminder-farmaci{
+
+#reminder-paziente, #reminder-farmaci {
   padding-top: 30px;
   padding-left: 60px;
   font-size: 20px;
   font-weight: bold;
 }
-#reminder-terapia{
+
+#reminder-terapia {
   padding-top: 30px;
   padding-left: 60px;
   font-size: 20px;
@@ -41,31 +48,31 @@ input[type="date"] {
 }
 
 
-#form-paziente{
+#form-paziente {
   padding-top: 50px;
   padding-left: 25px;
   padding-right: 25px;
   font-family: Candara, sans-serif;
 }
 
-#button-farmaci{
+#button-farmaci {
   padding-top: 20px;
   padding-left: 25px;
 }
 
 
-#ricerca-farmaco{
+#ricerca-farmaco {
   padding-left: 10px;
 }
 
-#sezione-farmaci1{
+#sezione-farmaci1 {
   font-family: Candara, sans-serif;
   font-size: 14px;
   padding-left: 25px;
   padding-top: 25px;
 }
 
-#sezione-farmaci2{
+#sezione-farmaci2 {
   font-family: Candara, sans-serif;
   font-weight: bold;
   font-size: 15px;
@@ -73,17 +80,17 @@ input[type="date"] {
   padding-left: 25px;
 }
 
-#link-modifica{
+#link-modifica {
   text-decoration: none;
   color: black;
 }
 
-#bottone-crea-row{
+#bottone-crea-row {
   padding-top: 40px;
   padding-left: 60px;
 }
 
-#crea-button{
+#crea-button {
   background-color: #a5d8d9;
   color: white;
   font-size: 14px;
@@ -94,10 +101,10 @@ input[type="date"] {
   margin-left: -30px;
 }
 
-#form-username-logo{
+#form-username-logo {
   padding-left: 950px;
 }
 
-#mostra-farmaci{
+#mostra-farmaci {
   padding-left: 20px;
 }

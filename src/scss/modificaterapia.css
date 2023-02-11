@@ -1,21 +1,21 @@
-body{
+body {
   font-family: Arial;
 }
 
-nav{
+nav {
   background-color: #efd5a3;
 }
 
-#nome-paziente{
+#nome-paziente {
   padding-top: 60px;
   font-size: 18px;
 }
 
-#età-paziente{
+#età-paziente {
   font-size: 14px;
 }
 
-#cancella-selezionati, #nuovo-farmaco{
+#cancella-selezionati, #nuovo-farmaco {
   background-color: #a5d8d9;
   color: white;
   font-size: 13px;
@@ -26,15 +26,16 @@ nav{
   padding-right: 15px;
 }
 
-#proprietà-farmaci{
+#proprietà-farmaci {
   padding-top: 30px;
   font-size: 14px;
 }
-#farmaci{
+
+#farmaci {
   padding-top: 20px;
 }
 
-#button-save{
+#button-save {
   background-color: #a5d8d9;
   color: white;
   font-size: 13px;

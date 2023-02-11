@@ -1,4 +1,4 @@
-window.approva = function(id){
+window.approva = function (id) {
   getDottoreByStato(0)
   .then(listDottori => {
     let dottore = listDottori.list[id];

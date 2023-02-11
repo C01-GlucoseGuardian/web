@@ -1,8 +1,8 @@
-nav{
+nav {
   background-color: #efd5a3;
 }
 
-#modifica-terapia{
+#modifica-terapia {
   background-color: #a5d8d9;
   color: white;
   font-size: 14px;
@@ -13,7 +13,7 @@ nav{
   padding-right: 15px;
 }
 
-#associa-tutore{
+#associa-tutore {
   background-color: #a5d8d9;
   color: white;
   font-size: 14px;
@@ -25,31 +25,31 @@ nav{
   margin-left: 80px;
 }
 
-#nome-paziente{
+#nome-paziente {
   padding-top: 70px;
   font-size: 18px;
 }
 
-#età-paziente{
+#età-paziente {
   font-size: 14px;
 }
 
-#terapia-attuale{
+#terapia-attuale {
   padding-top: 100px;
   font-weight: bold;
   font-size: 18px;
 }
 
-#terapia-paziente{
+#terapia-paziente {
   font-size: 16px;
 }
 
-#grafico-glicemia{
+#grafico-glicemia {
   padding-top: 120px;
   font-weight: bold;
 }
 
-#riscontro-positivo{
+#riscontro-positivo {
   background-color: #a5d8d9;
   color: white;
   font-size: 12px;
@@ -58,13 +58,13 @@ nav{
   margin-top: 40px;
 }
 
-#feedback-ricevuti{
+#feedback-ricevuti {
   padding-top: 70px;
   font-weight: bold;
   font-size: 15px;
 }
 
-#feedback-list{
+#feedback-list {
   font-weight: bold;
   font-size: 15px;
 }

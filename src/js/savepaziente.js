@@ -1,6 +1,5 @@
 import {fetchResource} from "./api_wrapper";
-import {findFarmaco, getFarmaco} from "./api";
-import {getPaziente} from "./api";
+import {findFarmaco} from "./api";
 
 document.addEventListener('DOMContentLoaded', () => {
   const listaFarmaco = [];
@@ -62,7 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const tipoDiabete = document.getElementById("tipoDiabete").value;
     const comorbilita = document.getElementById("comorbilita").value;
     const farmaciAssunti = document.getElementById("farmaciAssunti").value;
-    const periodoDiMonitoraggio = document.getElementById("periodoMonitoraggio").value;
+    const periodoDiMonitoraggio = document.getElementById(
+        "periodoMonitoraggio").value;
     const numeriUtili = document.getElementById("numeriUtili").value.split(
         /, ?/).map(x => {
       const numero = {}
@@ -71,12 +71,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     const terapia = {farmaci: listaFarmaco};
     console.log(terapia);
-    let risultato = savePaziente(codiceFiscale, nome, cognome, dataNascita, indirizzo, telefono,
+    let risultato = savePaziente(codiceFiscale, nome, cognome, dataNascita,
+        indirizzo, telefono,
         email, sesso, tipoDiabete, comorbilita, farmaciAssunti,
         periodoDiMonitoraggio, numeriUtili, terapia)
     risultato.then(risposta => alert(risposta.msg)).catch(
         error => alert(error.response.msg))
-
 
   });
 
