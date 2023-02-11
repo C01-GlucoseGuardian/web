@@ -41,17 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let paziente = listPazienti.list[id];
       let codiceFiscale = paziente.codiceFiscale;
       localStorage.setItem("cfPaziente", codiceFiscale)
-
-    });
-  };
-  window.visualizzaAgenda = function (id) {
-    getPazienteByDottore(localStorage.getItem("cf"))
-    .then(listPazienti => {
-      let paziente = listPazienti.list[id];
-      let codiceFiscale = paziente.codiceFiscale;
-      localStorage.setItem("cfPaziente", codiceFiscale)
-      window.location = "../dataview/agenda.html";
-
+      window.location = "../dataview/dati.html";
     });
   };
 });

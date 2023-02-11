@@ -417,3 +417,17 @@ export const getTerapiaByPaziente = (codiceFiscale) => {
       Authorization: "Bearer " + localStorage.getItem("token")},
   });
 }
+
+export const updateTerapia = (idPaziente, farmaci) =>{
+  return fetchResource("terapia/update", {
+    method: "POST",
+    body: {
+      idPaziente,
+      farmaci,
+    },
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: "Bearer " + localStorage.getItem("token")},
+  });
+}
