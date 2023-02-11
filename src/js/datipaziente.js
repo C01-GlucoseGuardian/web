@@ -1,6 +1,7 @@
 import {getPaziente} from "./api";
 import {getTerapiaByPaziente} from "./api";
 import {getPazienteByDottore} from "./api";
+import {getFeedBackByPaziente} from "./api";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -40,6 +41,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
       document.getElementById("terapia-paziente").innerHTML = html;
 
+    })
+  })();
+
+  (function getFeedback() {
+    let codiceFiscale = localStorage.getItem("cfPaziente");
+    getFeedBackByPaziente(codiceFiscale)
+    .then(feedback => {
+      console.log(feedback);
+      let html = '';
+      for (let i of feedback.list) {
+        html += `
+          <p id="feedback-list">Ore Sonno: ${i.oreSonno} -  Stato Salute: ${i.statoSalute} - Dolori: ${i.dolori} - Svenimenti: ${i.svenimenti} - Data: ${i.data}</p><br>
+          `;
+      }
+      document.getElementById("feedback-list").innerHTML = html;
     })
   })();
 

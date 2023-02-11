@@ -307,7 +307,9 @@ export const getFeedBackByPaziente = (codiceFiscale) => {
     body: {
       codiceFiscale,
     },
-    headers: {Authorization: "Bearer " + localStorage.getItem("token")},
+    headers: { Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: "Bearer " + localStorage.getItem("token")},
   });
 };
 
