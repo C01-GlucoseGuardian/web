@@ -22,11 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button type="button" class="btn btn-sm text-center" id="button-dati-${i}" onclick="visualizzaDati(${i})" style="background-color: #a5d8d9;color: white;font-size: 12px;border-radius: 13px;font-weight: bold;padding-left: 50px;padding-right: 50px;margin-left: -30px;">Visualizza Dati</button>
               </a>
             </div>
-            <div class="col-sm-2">
-              <a href="#" id="sezione-bottone-agenda"><br>
-                <button type="button" class="btn btn-sm text-center" id="button-paziente-${i}" onclick="visualizzaAgenda(${i})" style="background-color: #a5d8d9;color: white;font-size: 12px;border-radius: 13px;font-weight: bold;padding-left: 70px;padding-right: 70px;margin-left: -30px;">Agenda</button>
-              </a>
-            </div>
           </div>
         `;
         i++;

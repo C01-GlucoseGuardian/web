@@ -2,8 +2,6 @@ import {getPaziente} from "./api";
 import {getTerapiaByPaziente} from "./api";
 import {getPazienteByDottore} from "./api";
 import {getFeedBackByPaziente} from "./api";
-import {pazienteUpdateTutori} from "./api";
-import {getTutore} from "./api";
 import {sendNotifica} from "./api";
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -60,17 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById("feedback-list").innerHTML = html;
     })
   })();
-
-  function associaTutore(){
-    let idPaziente = localStorage.getItem("cfPaziente");
-    var codiceFiscale = prompt("Inserisci il codice fiscale del tutore:", "Codice Fiscale");
-    let risultato = getTutore(codiceFiscale);
-    risultato.then(risposta => alert(risposta.msg)).catch(
-        error => alert(error.response.msg))
-    console.log(pazienteUpdateTutori(idPaziente,codiceFiscale));
-
-  }
-  document.getElementById("associa-tutore").onclick = associaTutore;
 
   function inviaNotifica(){
     let messaggio = "prova";

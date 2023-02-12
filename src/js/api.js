@@ -437,12 +437,12 @@ export const updateTerapia = (idPaziente, farmaci) => {
   });
 }
 
-export const pazienteUpdateTutori = (idPaziente, farmaci) => {
+export const pazienteUpdateTutori = (idPaziente, list) => {
   return fetchResource("paziente/updateTutori", {
     method: "POST",
     body: {
       idPaziente,
-      farmaci,
+      list,
     },
     headers: {
       Accept: "application/json",

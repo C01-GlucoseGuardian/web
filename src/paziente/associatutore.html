@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Associa Tutore</title>
+  <script type="module" src="../js/main.js"></script>
+  <link rel="stylesheet" href="../scss/associatutore.css">
+  <script type="module" src="../js/associatutore.js"></script>
+</head>
+<body>
+<nav class="navbar">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Associa tutore al paziente</span>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row" id="rowRicerca">
+  <div class="col-md-4">
+    <div class="input-group mb-3">
+              <span class="input-group-text" style="background-color: #f9f2ed;"><i
+                  class="bi bi-search"></i> </span>
+      <input type="text" class="form-control" id="cfTutore" placeholder="Codice Fiscale Tutore"
+             aria-label="Codice Ficale Tutore" aria-describedby="basic-addon1" style="background-color:#f9f2ed; ">
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="text pt-1 mb-5 pb-1">
+      <button type="button" class="btn btn-sm text-center" id="cercaCf">CERCA TUTORE</button>
+    </div>
+  </div>
+    <div class="container" id="stampaRicerca"></div>
+
+  </div>
+  </div>
+</div>
+</body>
+</html>
