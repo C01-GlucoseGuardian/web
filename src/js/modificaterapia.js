@@ -79,9 +79,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const noteAggiuntive = document.getElementById("noteAggiuntive").value;
     findFarmaco(nomeFarmaco)
     .then(farmaci => {
-      if (farmaci.list.length == 0) {
-        alert("farmaco non riconosciuto")
-      }
+
+       if (nomeFarmaco.length > 50) {
+          alert("il nome del farmaco supera il numero massimo di caratteri consentiti")
+          } else if (farmaci.list.length == 0) {
+                         alert("farmaco non riconosciuto")
+                       }
+
+
 
       const farmaco = farmaci.list[0];
       const idFarmaco = farmaco.id;
@@ -95,6 +100,8 @@ document.addEventListener('DOMContentLoaded', () => {
             noteAggiuntive: noteAggiuntive
           }
       )
+
+
 
       if (!dosaggio) {
         alert("Il campo dosaggio non può essere vuoto")
