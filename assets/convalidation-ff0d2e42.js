@@ -1,4 +1,4 @@
-import"./modulepreload-polyfill-ec808ebb.js";/* empty css               */import{g as a,d as n}from"./api-e9c52af7.js";import"./api_wrapper-35c8f065.js";document.addEventListener("DOMContentLoaded",()=>{let t=0;(function(){a(0).then(i=>{let e="";for(let o of i.list)e+=`
+import"./modulepreload-polyfill-ec808ebb.js";/* empty css               */import{g as a,d as n}from"./api-59437bcf.js";import"./api_wrapper-35c8f065.js";document.addEventListener("DOMContentLoaded",()=>{let t=0;(function(){a(0).then(i=>{let e="";for(let o of i.list)e+=`
           <div class="row" id="dati-dottore">
             <div class="col-md-2" id="nome-dottore">${o.nome}</div>
             <div class="col-md-2" id="cognome-dottore">${o.cognome}</div>
