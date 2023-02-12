@@ -359,7 +359,9 @@ export const getTutore = (codiceFiscale) => {
     body: {
       codiceFiscale,
     },
-    headers: {Authorization: "Bearer " + localStorage.getItem("token")},
+    headers: {Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: "Bearer " + localStorage.getItem("token")},
   });
 };
 
@@ -388,18 +390,15 @@ export const sendNotifica = (
   return fetchResource("notifica/send", {
     method: "POST",
     body: {
-      id,
       messaggio,
       data,
       ora,
-      stato,
       pazienteOggetto,
-      pazienteDestinatario,
-      tutoreDestinatario,
-      adminDestinatario,
-      dottoreDestinatario,
+      pazienteDestinatario
     },
-    headers: {Authorization: "Bearer " + localStorage.getItem("token")},
+    headers: {Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: "Bearer " + localStorage.getItem("token")},
   });
 };
 
@@ -425,6 +424,21 @@ export const getTerapiaByPaziente = (codiceFiscale) => {
 
 export const updateTerapia = (idPaziente, farmaci) => {
   return fetchResource("terapia/update", {
+    method: "POST",
+    body: {
+      idPaziente,
+      farmaci,
+    },
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: "Bearer " + localStorage.getItem("token")
+    },
+  });
+}
+
+export const pazienteUpdateTutori = (idPaziente, farmaci) => {
+  return fetchResource("paziente/updateTutori", {
     method: "POST",
     body: {
       idPaziente,

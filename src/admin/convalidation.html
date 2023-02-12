@@ -7,55 +7,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Nuovo Paziente</title>
   <link rel="stylesheet" href="../scss/styles.scss">
-  <script type="module" src="../js/main.js"></script>
   <link rel="stylesheet" href="../scss/convalidation.css">
+
   <script type="module" src="../js/convalidation.js"></script>
 </head>
-<body style="background-color: #f7f2ed;">
+<body>
 
 
-<div class="container">
-  <br>
+<div class="container" id="container-principale">
   <div class="card rounded-2 text-black" style="background-color: #ffffff;">
-
-
-    <nav class="nav" style="background-color: #efd5a3; ">
-      <p style="font-size: 20px; margin-left: 20px; margin-top: 15px; " class="fw-normal ">
-        Profili dottore in attesa di convalida
-      </p>
-
-      <form class="form-inline my-2 my-lg-0; fw-light" style="padding-left: 780px">
-        UserName &nbsp;
-        <img class="img-thumbnail rounded-circle" style="width: 50px; height: 50px;"
-             src="../images/logoDoc.png" alt="">
-      </form>
-
+    <nav class="navbar">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Profili dottore in attesa di convalida</span>
+      </div>
     </nav>
-
-
-    <div class="row">
-
-      <div class="col-sm-4 fw-lighter" style="margin-left: -15px;" id="reminder-paziente">Lista
-        dottori in attesa
+    <div class="container" id="container-dati-dottore">
+      <div class="row">
+        <div class="col-md-2">NOME</div>
+        <div class="col-md-2">COGNOME</div>
+        <div class="col-md-2">SPECIALIZZAZIONE</div>
+        <div class="col-md-3">CODICE ISCRIZIONE ALBO</div>
+        <div class="col-md-3"></div>
       </div>
     </div>
-    <br>
+    <div class="container" id="stampa-dottori">
+      <div class="row" id="dati-dottore">
 
-
-    <div class="row fw-lighter" id="proprietà-dottore">
-      <div class="col-sm-2">NOME</div>
-      <div class="col-sm-2">COGNOME</div>
-      <div class="col-sm-2">SPECIALIZZAZIONE</div>
-      <div class="col-sm-2">CODICE ISCRIZIONE ALBO</div>
+      </div>
     </div>
-
-
-    <div class="row fw-normal" id="dati-dottore">
-
-    </div>
-
   </div>
 </div>
-<br>
 </body>
 </html>
