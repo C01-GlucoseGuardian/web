@@ -96,6 +96,10 @@ document.addEventListener('DOMContentLoaded', () => {
           }
       )
 
+      if(!nomeFarmaco){
+        alert("Il campo nome farmaco non può essere vuoto")
+      }
+
       if (nomeFarmaco.length > 50) {
         alert("Il campo nome farmaco supera i caratteri cnsentiti")
       }
