@@ -2,6 +2,9 @@ import {getPaziente} from "./api";
 import {getTerapiaByPaziente} from "./api";
 import {getPazienteByDottore} from "./api";
 import {getFeedBackByPaziente} from "./api";
+import {pazienteUpdateTutori} from "./api";
+import {getTutore} from "./api";
+import {sendNotifica} from "./api";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -22,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let codiceFiscale = localStorage.getItem("cfPaziente");
     getTerapiaByPaziente(codiceFiscale)
     .then(terapia => {
-      console.log(terapia)
       let html = '';
       for (let i = 0; i < terapia.farmaci.length; i++) {
         let farmaco = terapia.farmaci[i];
@@ -48,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let codiceFiscale = localStorage.getItem("cfPaziente");
     getFeedBackByPaziente(codiceFiscale)
     .then(feedback => {
-      console.log(feedback);
+
       let html = '';
       for (let i of feedback.list) {
         html += `
@@ -58,6 +60,39 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById("feedback-list").innerHTML = html;
     })
   })();
+
+  function associaTutore(){
+    let idPaziente = localStorage.getItem("cfPaziente");
+    var codiceFiscale = prompt("Inserisci il codice fiscale del tutore:", "Codice Fiscale");
+    let risultato = getTutore(codiceFiscale);
+    risultato.then(risposta => alert(risposta.msg)).catch(
+        error => alert(error.response.msg))
+    console.log(pazienteUpdateTutori(idPaziente,codiceFiscale));
+
+  }
+  document.getElementById("associa-tutore").onclick = associaTutore;
+
+  function inviaNotifica(){
+    let messaggio = "prova";
+    console.log(messaggio);
+    let ora = getCurrentTime();
+    let data = getCurrentDate();
+    let pazienteDestinatario = localStorage.getItem("cfPaziente");
+    let pazienteOggetto = localStorage.getItem("cfPaziente");
+    let notifica =({
+       messaggio,
+       data,
+       ora,
+      pazienteOggetto,
+      pazienteDestinatario
+    });
+    console.log(notifica);
+    sendNotifica(notifica).then(risposta => alert(risposta.msg)).catch(
+        error => alert(error.response.msg))
+
+
+  }
+  document.getElementById("riscontro-positivo").onclick = inviaNotifica;
 
   function calcolaEta(dataNascita) {
     let parts = dataNascita.split("/");
@@ -73,5 +108,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     return eta;
   }
+
+  function getCurrentTime() {
+    let date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+
+    hours = (hours < 10) ? "0" + hours : hours;
+    minutes = (minutes < 10) ? "0" + minutes : minutes;
+    seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+    return hours + ":" + minutes + ":" + seconds;
+  }
+
+  function getCurrentDate() {
+    let date = new Date();
+    let year = date.getFullYear();
+    let month = date.getMonth() + 1;
+    let day = date.getDate();
+
+    month = (month < 10) ? "0" + month : month;
+    day = (day < 10) ? "0" + day : day;
+
+    return year + "-" + month + "-" + day;
+  }
+
+
+
 
 })
