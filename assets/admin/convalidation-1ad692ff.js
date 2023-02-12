@@ -1,4 +1,4 @@
-import"./styles-fac82e35.js";import"./bootstrap.esm-19ee7221.js";import{g as a,d as n}from"./api-1d682227.js";import"./api_wrapper-35c8f065.js";document.addEventListener("DOMContentLoaded",()=>{let t=0;(function(){a(0).then(i=>{let d="";for(let o of i.list)d+=`
+import"../styles-fac82e35.js";import"../bootstrap.esm-19ee7221.js";import{g as a,d as n}from"../api-71ed6a10.js";import"../api_wrapper-35c8f065.js";document.addEventListener("DOMContentLoaded",()=>{let t=0;(function(){a(0).then(i=>{let d="";for(let o of i.list)d+=`
           <div class="row fw-normal" id="dati-dottore">
             <div class="col-sm-2" id="nome-dottore">${o.nome}</div>
             <div class="col-sm-2" id="cognome-dottore">${o.cognome}</div>

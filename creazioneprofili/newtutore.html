@@ -1,123 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Nuovo Tutore</title>
-        
-        
-      <script type="module" crossorigin src="/assets/newtutore-3c1bb6c4.js"></script>
-      <link rel="modulepreload" crossorigin href="/assets/styles-fac82e35.js">
-      <link rel="modulepreload" crossorigin href="/assets/bootstrap.esm-19ee7221.js">
-      <link rel="modulepreload" crossorigin href="/assets/api_wrapper-35c8f065.js">
-      <link rel="stylesheet" href="/assets/styles-2f2c8106.css">
-    </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuovo Tutore</title>
+  
+  
+  <script type="module" crossorigin src="/assets/creazioneprofili/newtutore-8d96e631.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/styles-fac82e35.js">
+  <link rel="modulepreload" crossorigin href="/assets/bootstrap.esm-19ee7221.js">
+  <link rel="modulepreload" crossorigin href="/assets/api_wrapper-35c8f065.js">
+  <link rel="stylesheet" href="/assets/styles-2f2c8106.css">
+</head>
 <body style="background-color: #f7f2ed;">
 
-<section class="h-100 gradient-form" >
-    <div class="container py-4 h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-xl-10 ">
-                <div class="card rounded-2 text-black" style="background-color: #f7f2ed; margin-left: 170px; margin-right: 170px; ">
+<section class="h-100 gradient-form">
+  <div class="container py-4 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10 ">
+        <div class="card rounded-2 text-black"
+             style="background-color: #f7f2ed; margin-left: 170px; margin-right: 170px; ">
 
 
-                    
-                    <nav class="nav " style="background-color: #efd5a3; ">
+          <nav class="nav " style="background-color: #efd5a3; ">
 
-                        <p style="font-size: 20px; margin-left: 20px; margin-top: 15px; " class="fw-normal ">
-                            Crea profilo tutore 
+            <p style="font-size: 20px; margin-left: 20px; margin-top: 15px; " class="fw-normal ">
+              Crea profilo tutore
 
-                        </p>
-                        <form class="form-inline my-2 my-lg-0; fw-light" style="padding-left: 450px; padding-top: 10px; font-size: 18px; font-weight: bold">
-                                Benvenuto!  &nbsp;
+            </p>
+            <form class="form-inline my-2 my-lg-0; fw-light"
+                  style="padding-left: 450px; padding-top: 10px; font-size: 18px; font-weight: bold">
+              Benvenuto! &nbsp;
 
-                            </form>
+            </form>
 
-                      </nav>
+          </nav>
 
-                    <div class="row g-0" >
-                        
-                        <div class="col-lg-6 d-flex align-items-center gradient-custom-2" ></div>
+          <div class="row g-0">
 
-                        <div class="card-body p-md-6 mx-md-5 ">
+            <div class="col-lg-6 d-flex align-items-center gradient-custom-2"></div>
 
-
-
-                            <form>
-                                <p style="font-size: 20px;" class="fw-lighter">Crea nuovo tutore nel sistema</p>
-
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i class="bi bi-person"> </i> </span>
-                                    <input type="text" class="form-control" id="nome" placeholder="Nome" aria-describedby="basic-addon1">
-                                </div>
-                                
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i class="bi bi-person"></i> </span>
-                                    <input type="text" class="form-control" id="cognome" placeholder="Cognome" aria-label="Cognome" aria-describedby="basic-addon1">
-                                </div>
-                    
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i class="bi bi-person-vcard"></i></span>
-                                    <input type="text" class="form-control" id="codiceFiscale" placeholder="Codice Fiscale" aria-label="CF" aria-describedby="basic-addon1">
-                                </div>
-
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i class="bi bi-calendar"></i></span>
-                                    <input type="text" class="form-control" id="dataNascita" placeholder="Data di nascita DD/MM/YYYY" aria-label="Data di nascita" aria-describedby="basic-addon1">
-                                </div>
-            
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i class="bi bi-envelope-at"></i></span>
-                                    <input type="email" class="form-control" id="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
-                                </div>
-            
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i class="bi bi-phone"></i></span>
-                                    <input type="tel" class="form-control" id="telefono" placeholder="Telefono" aria-label="Telefono" aria-describedby="basic-addon1">
-                                </div>
-            
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i class="bi bi-house"></i></span>
-                                    <input type="text" class="form-control" id="indirizzo" placeholder="Indirizzo" aria-label="Indirizzo" aria-describedby="basic-addon1">
-                                </div>
-            
-                                <select class="form-select" id="sesso" style="background-color: #f9f2ed;" aria-label="Default select example">
-                                    <option selected>Sesso</option>
-                                    <option value="M">Maschio</option>
-                                    <option value="F">Femmina</option>
-                                  </select>
-                                
+            <div class="card-body p-md-6 mx-md-5 ">
 
 
+              <form>
+                <p style="font-size: 20px;" class="fw-lighter">Crea nuovo tutore nel sistema</p>
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i
+                      class="bi bi-person"> </i> </span>
+                  <input type="text" class="form-control" id="nome" placeholder="Nome"
+                         aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i
+                      class="bi bi-person"></i> </span>
+                  <input type="text" class="form-control" id="cognome" placeholder="Cognome"
+                         aria-label="Cognome" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i
+                      class="bi bi-person-vcard"></i></span>
+                  <input type="text" class="form-control" id="codiceFiscale"
+                         placeholder="Codice Fiscale" aria-label="CF"
+                         aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i
+                      class="bi bi-calendar"></i></span>
+                  <input type="text" class="form-control" id="dataNascita"
+                         placeholder="Data di nascita DD/MM/YYYY" aria-label="Data di nascita"
+                         aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i
+                      class="bi bi-envelope-at"></i></span>
+                  <input type="email" class="form-control" id="email" placeholder="Email"
+                         aria-label="Email" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i
+                      class="bi bi-phone"></i></span>
+                  <input type="tel" class="form-control" id="telefono" placeholder="Telefono"
+                         aria-label="Telefono" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text" style="background-color: rgb(255, 255, 255);"><i
+                      class="bi bi-house"></i></span>
+                  <input type="text" class="form-control" id="indirizzo" placeholder="Indirizzo"
+                         aria-label="Indirizzo" aria-describedby="basic-addon1">
+                </div>
+
+                <select class="form-select" id="sesso" style="background-color: #f9f2ed;"
+                        aria-label="Default select example">
+                  <option selected>Sesso</option>
+                  <option value="M">Maschio</option>
+                  <option value="F">Femmina</option>
+                </select>
 
 
+                <div class="text-center pt-1 mb-5 pb-1">
+                  <a class="text-muted" style="padding-right: 400px;"
+                     href="../dataview/dashboard.html">&larr; Dashboard</a>
 
-                                <div class="text-center pt-1 mb-5 pb-1">
-                                    <a class="text-muted" style="padding-right: 400px;" href="../dataview/dashboard.html">&larr; Dashboard</a>
-                                   
-                                    <button type="button" class="btn btn-success" id="crea-button" style="background-color: #a5d8d9; margin-right: -10px; padding-left: 30px; padding-right: 30px;">Crea</button>
+                  <button type="button" class="btn btn-success" id="crea-button"
+                          style="background-color: #a5d8d9; margin-right: -10px; padding-left: 30px; padding-right: 30px;">
+                    Crea
+                  </button>
 
-                    
-                                </div>
-
-                               
-
-
-                            </form>
-
-                        </div>
-
-
-                        
-                    </div>
-
-                    </div>
-
-                    
 
                 </div>
+
+
+              </form>
+
             </div>
+
+
+          </div>
+
         </div>
+
+
+      </div>
+    </div>
+  </div>
 </section>
 
 </body>
