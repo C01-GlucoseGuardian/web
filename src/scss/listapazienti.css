@@ -1,15 +1,16 @@
 body {
   font-family: "Arial";
-  margin-top: 50px;
+
 }
 
-#navbar {
+.navbar {
   padding-left: 10px;
+  background-color: #efd5a3;
 }
 
 #pazienti-attivi {
   padding-top: 20px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 #attributi-pazienti {
