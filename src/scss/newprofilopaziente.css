@@ -1,6 +1,10 @@
 .navbar {
   background-color: #f8f2ed;
+}
 
+body{
+  padding-top: 30px;
+  font-family: ;
 }
 
 #nav-paziente {
@@ -29,7 +33,7 @@ input[type="date"] {
 
 
 .navbar-brand {
-  font-family: Candara, sans-serif;
+
   font-weight: bold;
 }
 
@@ -52,7 +56,7 @@ input[type="date"] {
   padding-top: 50px;
   padding-left: 25px;
   padding-right: 25px;
-  font-family: Candara, sans-serif;
+
 }
 
 #button-farmaci {
@@ -66,14 +70,14 @@ input[type="date"] {
 }
 
 #sezione-farmaci1 {
-  font-family: Candara, sans-serif;
+
   font-size: 14px;
   padding-left: 25px;
   padding-top: 25px;
 }
 
 #sezione-farmaci2 {
-  font-family: Candara, sans-serif;
+
   font-weight: bold;
   font-size: 15px;
   padding-top: 5px;
@@ -106,5 +110,27 @@ input[type="date"] {
 }
 
 #mostra-farmaci {
+  padding-left: 35px;
+}
+
+#aggiunta-terapia{
+  background-color: #a5d8d9;
+  color: white;
+  font-size: 14px;
+  border-radius: 16px;
+  font-weight: bold;
   padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+}
+
+#cerca-button{
+  background-color: #a5d8d9;
+  color: white;
+  font-size: 14px;
+  border-radius: 16px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
 }
