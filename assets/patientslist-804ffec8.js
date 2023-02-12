@@ -1,4 +1,4 @@
-import"./modulepreload-polyfill-ec808ebb.js";/* empty css                     */import"./bootstrap.esm-19ee7221.js";/* empty css               */import{h as d}from"./api-e9c52af7.js";import"./api_wrapper-35c8f065.js";document.addEventListener("DOMContentLoaded",()=>{let t=0;(function(){let i=localStorage.getItem("cf");d(i).then(n=>{let e="";for(let o of n.list)e+=`
+import"./modulepreload-polyfill-ec808ebb.js";import"./bootstrap.esm-19ee7221.js";/* empty css               */import{h as d}from"./api-e9c52af7.js";import"./api_wrapper-35c8f065.js";document.addEventListener("DOMContentLoaded",()=>{let t=0;(function(){let i=localStorage.getItem("cf");d(i).then(n=>{let e="";for(let o of n.list)e+=`
           <div class="row fw-normal" id="pazienti">
             <div class="col-sm-2" id="nome-paziente"><br>${o.nome}</div>
             <div class="col-sm-2" id="cognome-paziente"><br>${o.cognome}</div>
