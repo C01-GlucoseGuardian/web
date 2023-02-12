@@ -8,15 +8,7 @@ export default {
   build: {
     outDir: path.join(__dirname, "src/dist"),
     rollupOptions: {
-      input: Object.fromEntries(
-          glob.sync('src/**/*.html').map(file => [
-            path.relative(
-                'src',
-                file.slice(0, file.length - path.extname(file).length)
-            ),
-            fileURLToPath(new URL(file, import.meta.url))
-          ]),
-      )
+      input: glob.sync('src/**/*.html')
     },
   },
   resolve: {
