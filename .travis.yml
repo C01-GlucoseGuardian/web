@@ -6,15 +6,18 @@ language:
 node_js:
   - "18"
 
-dist: jammy #ubuntu 22.04
+# Jammy fails deploy
+dist: focal
 
-deploy: 
-  - npm run deploy
- 
 script:
-  - echo 0
-
-stages:
-  - name: deploy
-    if: branch = main && type != pull_request
+  - npm run predeploy
+  
+deploy:
+  provider: pages
+  skip_cleanup: true
+  keep_history: true
+  github-token: $GITHUB_TOKEN
+  local_dir: src/dist
+  on:
+    branch: main
 

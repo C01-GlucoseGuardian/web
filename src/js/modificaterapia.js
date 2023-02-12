@@ -101,8 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
           }
       )
 
-
-
       if (!dosaggio) {
         alert("Il campo dosaggio non può essere vuoto")
       }
@@ -134,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let risultato = updateTerapia(cf, listaFarmaco);
     risultato.then(risposta => alert(risposta.msg)).catch(
         error => alert(error.response.msg))
-    console.log(listaFarmacoasp
+    console.log(listaFarmaco
     )
     location.reload();
 
