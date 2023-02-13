@@ -87,9 +87,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const noteAggiuntive = document.getElementById("noteAggiuntive").value;
     findFarmaco(nomeFarmaco)
     .then(farmaci => {
-      if (farmaci.list.length == 0) {
-        alert("farmaco non riconosciuto")
-      }
+
+       if (nomeFarmaco.length > 50) {
+          alert("il nome del farmaco supera il numero massimo di caratteri consentiti")
+          } else if (farmaci.list.length == 0) {
+                         alert("farmaco non riconosciuto")
+                       }
+
+
 
       const farmaco = farmaci.list[0];
       const idFarmaco = farmaco.id;
@@ -103,14 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
             noteAggiuntive: noteAggiuntive
           }
       )
-
-      if(!nomeFarmaco){
-        alert("Il campo nome farmaco non può essere vuoto")
-      }
-
-      if (nomeFarmaco.length > 50) {
-        alert("Il campo nome farmaco supera i caratteri cnsentiti")
-      }
 
       if (!dosaggio) {
         alert("Il campo dosaggio non può essere vuoto")
@@ -141,12 +138,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function aggiornaTerapia() {
     let cf = localStorage.getItem("cfPaziente");
     let risultato = updateTerapia(cf, listaFarmaco);
-    risultato.then(risposta => alert(risposta.msg)).catch(
-        error => alert(error.response.msg))
-    console.log(listaFarmaco
-    )
-    location.reload();
-
+    risultato.then(risposta => {
+      alert(risposta.msg)
+      location.reload();
+    }).catch(error => alert(error.response.msg))
+    console.log(listaFarmaco)
   }
 
   document.getElementById("aggiorna-terapia").onclick = aggiornaTerapia;

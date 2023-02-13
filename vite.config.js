@@ -1,4 +1,6 @@
 const path = require('path')
+import glob from 'glob';
+import {fileURLToPath} from 'url'
 
 export default {
   root: path.resolve(__dirname, 'src'),
@@ -6,20 +8,7 @@ export default {
   build: {
     outDir: path.join(__dirname, "src/dist"),
     rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'src/index.html'),
-        error: path.resolve(__dirname, 'src/error/genericerror.html'),
-        login: path.resolve(__dirname, 'src/login/login.html'),
-        loginAdmin: path.resolve(__dirname, 'src/login/contactanadmin.html'),
-        admin: path.resolve(__dirname, 'src/admin/convalidation.html'),
-        newprofilopaziente: path.resolve(__dirname,
-            'src/creazioneprofili/newpaziente.html'),
-        newtutore: path.resolve(__dirname,
-            'src/creazioneprofili/newtutore.html'),
-        dati: path.resolve(__dirname, 'src/paziente/dati.html'),
-        patientlist: path.resolve(__dirname, 'src/dataview/patientslist.html'),
-        signup: path.resolve(__dirname, 'src/signup/signup.html'),
-      },
+      input: glob.sync('src/**/*.html')
     },
   },
   resolve: {

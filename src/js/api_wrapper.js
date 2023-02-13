@@ -1,4 +1,4 @@
-const API_URL = "https://api.glucoseguardian.it";
+import {API_URL} from './config'
 
 export function ApiError(message, data, status) {
   let response = null;
