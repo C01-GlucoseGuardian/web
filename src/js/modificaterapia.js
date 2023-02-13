@@ -4,6 +4,8 @@ import {getPazienteByDottore} from "./api";
 import {findFarmaco, getFarmaco} from "./api";
 import {updateTerapia} from "./api";
 
+import swal from 'sweetalert';
+
 document.addEventListener('DOMContentLoaded', () => {
 
   const listaFarmaco = [];
@@ -29,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
       let html = '';
       for (let i = 0; i < terapia.farmaci.length; i++) {
         let farmaco = terapia.farmaci[i];
-        //alert(JSON.stringify(farmaco))
-        //alert(JSON.stringify(farmaco.nomeFarmaco))
+        //swal(JSON.stringify(farmaco))
+        //swal(JSON.stringify(farmaco.nomeFarmaco))
 
         html += `
           <div class="row fw-normal" id="paragrafofarmaci">
@@ -81,9 +83,9 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(farmaci => {
 
        if (nomeFarmaco.length > 50) {
-          alert("il nome del farmaco supera il numero massimo di caratteri consentiti")
+          swal("il nome del farmaco supera il numero massimo di caratteri consentiti")
           } else if (farmaci.list.length == 0) {
-                         alert("farmaco non riconosciuto")
+                         swal("farmaco non riconosciuto")
                        }
 
 
@@ -102,16 +104,16 @@ document.addEventListener('DOMContentLoaded', () => {
       )
 
       if (!dosaggio) {
-        alert("Il campo dosaggio non può essere vuoto")
+        swal("Il campo dosaggio non può essere vuoto")
       }
       if (!checkTimeFormat(ora)) {
-        alert("Il formato dell'ora non è valido")
+        swal("Il formato dell'ora non è valido")
       }
       if (!somministrazione) {
-        alert("Il campo somministrazione non può essere vuoto")
+        swal("Il campo somministrazione non può essere vuoto")
       }
       if (noteAggiuntive.length > 300) {
-        alert(
+        swal(
             "Il campo note aggiuntive aggiuntive supera i caratteri consentiti")
       }
 
@@ -131,9 +133,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let cf = localStorage.getItem("cfPaziente");
     let risultato = updateTerapia(cf, listaFarmaco);
     risultato.then(risposta => {
-      alert(risposta.msg)
+      swal(risposta.msg)
       location.reload();
-    }).catch(error => alert(error.response.msg))
+    }).catch(error => swal(error.response.msg))
     console.log(listaFarmaco)
   }
 

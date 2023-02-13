@@ -1,6 +1,8 @@
 import {getDottoreByStato} from "./api";
 import {dottoreUpdateStato} from "./api";
 
+import swal from 'sweetalert';
+
 document.addEventListener('DOMContentLoaded', () => {
   let i = 0;
   (function getDottore() {
@@ -38,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let dottore = listDottori.list[id];
       let codiceFiscale = dottore.codiceFiscale;
       dottoreUpdateStato(codiceFiscale, 1);
-      alert("Dottore con cf: " + codiceFiscale + " stato aggiornato");
+      swal("Dottore con cf: " + codiceFiscale + " stato aggiornato");
       location.reload();
 
     });
@@ -49,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let dottore = listDottori.list[id];
       let codiceFiscale = dottore.codiceFiscale;
       dottoreUpdateStato(codiceFiscale, 2);
-      alert("Dottore con cf: " + codiceFiscale + " stato aggiornato");
+      swal("Dottore con cf: " + codiceFiscale + " stato aggiornato");
       location.reload();
 
     });

@@ -1,6 +1,8 @@
 import {ApiError} from "./api_wrapper";
 import {fetchResource} from "./api_wrapper";
 
+import swal from 'sweetalert';
+
 document.addEventListener('DOMContentLoaded', () => {
   function saveDottore(
       codiceFiscale,
@@ -65,8 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let risultato = saveDottore(codiceFiscale, nome, cognome, dataNascita,
         indirizzo, telefono, email, password, sesso, specializzazione,
         codiceAlbo, nomeStruttura, indirizzoStruttura)
-    risultato.then(risposta => alert(risposta.msg)).catch(
-        error => alert(error.response.msg))
+    risultato.then(risposta => swal(risposta.msg)).catch(
+        error => swal(error.response.msg))
 
   });
 })

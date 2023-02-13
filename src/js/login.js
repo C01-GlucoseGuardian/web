@@ -1,5 +1,7 @@
 import { login, loginOtp } from "./api";
 
+import swal from 'sweetalert';
+
 const validateEmail = (email) => {
   return String(email)
     .toLowerCase()
@@ -18,7 +20,7 @@ const handleResponse = (response) => {
   } else if (response.tipoUtente === 1) {
     window.location = "../dataview/dashboard.html";
   } else {
-    alert("Utilizza l'applicazione per loggarti!");
+    swal("Utilizza l'applicazione per loggarti!");
     localStorage.clear();
   }
 };
@@ -37,14 +39,14 @@ function onLoginBtnClick() {
             if (error.status == 401) {
               document.getElementById("otpInputDiv").style.visibility =
                 "visible";
-              alert("Inserisci codice OTP per proseguire con il login");
+              swal("Inserisci codice OTP per proseguire con il login");
             } else {
-              alert("email o password non valide");
+              swal("email o password non valide");
             }
             console.log(error);
           });
       } else {
-        alert("L'otp deve essere esattamente 6 caratteri");
+        swal("L'otp deve essere esattamente 6 caratteri");
       }
     } else {
       login(email, password)
@@ -52,15 +54,15 @@ function onLoginBtnClick() {
         .catch((error) => {
           if (error.status == 401) {
             document.getElementById("otpInputDiv").style.visibility = "visible";
-            alert("Inserisci codice OTP per proseguire con il login");
+            swal("Inserisci codice OTP per proseguire con il login");
           } else {
-            alert("email o password non valide");
+            swal("email o password non valide");
           }
           console.log(error);
         });
     }
   } else {
-    alert("Si è verificato un errore nel login");
+    swal("Si è verificato un errore nel login");
   }
 }
 

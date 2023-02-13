@@ -1,6 +1,8 @@
 import {getTutore} from "./api";
 import {pazienteUpdateTutori} from "./api";
 
+import swal from 'sweetalert';
+
 document.addEventListener('DOMContentLoaded', () => {
   let html = '';
 
@@ -53,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(cfPaziente);
     let risultato = pazienteUpdateTutori(cfPaziente, list);
       console.log(risultato);
-    risultato.then(risposta => alert(risposta.msg)).catch(
-        error => alert(error.response.msg))
+    risultato.then(risposta => swal(risposta.msg)).catch(
+        error => swal(error.response.msg))
   }
 })
