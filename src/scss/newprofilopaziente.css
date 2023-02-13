@@ -4,7 +4,7 @@
 
 body{
   padding-top: 30px;
-  font-family: ;
+
 }
 
 #nav-paziente {
@@ -33,15 +33,13 @@ input[type="date"] {
 
 
 .navbar-brand {
-
   font-weight: bold;
 }
 
 #reminder-paziente, #reminder-farmaci {
   padding-top: 30px;
   padding-left: 60px;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
 }
 
 #reminder-terapia {
@@ -58,6 +56,8 @@ input[type="date"] {
   padding-right: 25px;
 
 }
+
+
 
 #button-farmaci {
   padding-top: 20px;
@@ -130,7 +130,10 @@ input[type="date"] {
   font-size: 14px;
   border-radius: 16px;
   font-weight: bold;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-left: 20px;
+}
+#lista-terapia, #cerca-farmaci{
+  padding-left: 20px;
 }

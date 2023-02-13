@@ -1,0 +1,26 @@
+#crea-button{
+  background-color: #a5d8d9;
+  color: white;
+  font-size: 14px;
+  border-radius: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: -50px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.container{
+  margin-top: 35px;
+}
+
+#row-iniziale{
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+#inizio-form{
+  padding-top: 25px;
+}
+

@@ -29,15 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
       let html = '';
       for (let i = 0; i < terapia.farmaci.length; i++) {
         let farmaco = terapia.farmaci[i];
-        //alert(JSON.stringify(farmaco))
-        //alert(JSON.stringify(farmaco.nomeFarmaco))
 
         html += `
           <div class="row fw-normal" id="paragrafofarmaci">
-            <div class="col-sm-3" id="nome-farmaco">${farmaco.nomeFarmaco}</div>
+            <div class="col-sm-1" id="nome-farmaco">${farmaco.nomeFarmaco}</div>
             <div class="col-sm-1" id="dosaggio-farmaco">${farmaco.dosaggio}</div>
             <div class="col-sm-1" id="orario-farmaco">${farmaco.orarioAssunzione}</div>
-            <div class="col-sm-3" id="somministrazione-farmaco">${farmaco.viaDiSomministrazione}</div>
+            <div class="col-sm-1" id="somministrazione-farmaco">${farmaco.viaDiSomministrazione}</div>
             </div>
             
         `;
@@ -52,7 +50,17 @@ document.addEventListener('DOMContentLoaded', () => {
     findFarmaco(nomeFarmaco)
     .then(listFarmaci => {
       let html = '';
+      let html2 = '';
       for (let farmaco of listFarmaci.list) {
+
+        html2 = `
+         <div class="row fw-normal" id="proprietà-find-farmaci">
+          <br>
+            <div class="col-sm-6" id="nome-farmaco" style="font-weight: bold"><br>Nome Farmaco</div>
+            <div class="col-sm-6" id="principio-attivo" style="font-weight: bold"><br>Principio Attivo</div>
+           </div>
+        `;
+
         html += `
           <div class="row fw-normal" id="mostra-farmaci">
           <br>
@@ -62,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
            `;
 
       }
-
+      document.getElementById("proprietà-find-farmaci").innerHTML = html2;
       document.getElementById("lista-farmaci").innerHTML = html;
 
     })
