@@ -130,12 +130,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function aggiornaTerapia() {
     let cf = localStorage.getItem("cfPaziente");
     let risultato = updateTerapia(cf, listaFarmaco);
-    risultato.then(risposta => alert(risposta.msg)).catch(
-        error => alert(error.response.msg))
-    console.log(listaFarmaco
-    )
-    location.reload();
-
+    risultato.then(risposta => {
+      alert(risposta.msg)
+      location.reload();
+    }).catch(error => alert(error.response.msg))
+    console.log(listaFarmaco)
   }
 
   document.getElementById("aggiorna-terapia").onclick = aggiornaTerapia;
