@@ -12,9 +12,9 @@
   <script type="module" crossorigin src="/assets/modulepreload-polyfill-ec808ebb.js"></script>
   <script type="module" crossorigin src="/assets/api_wrapper-35c8f065.js"></script>
   <script type="module" crossorigin src="/assets/api-59437bcf.js"></script>
-  <script type="module" crossorigin src="/assets/modificaterapia-fcb74d1b.js"></script>
-  <link rel="stylesheet" href="/assets/styles-2f2c8106.css">
-  <link rel="stylesheet" href="/assets/modificaterapia-25bd14ae.css">
+  <script type="module" crossorigin src="/assets/modificaterapia-dd008b93.js"></script>
+  <link rel="stylesheet" href="/assets/styles-d1f91d5f.css">
+  <link rel="stylesheet" href="/assets/modificaterapia-16fa3e98.css">
 </head>
 <body style="background-color: #f7f2ed;">
 
@@ -29,19 +29,21 @@
       </p>
     </nav>
 
-    <div class="row">
-
-
-
-        <p id="nomepaziente">Nome Paziente: </p>
-        <p id="etapaziente">Età: </p>&nbsp;
+    <div class="row" id="generalita-paziente">
+      <p id="nomepaziente">Nome Paziente: </p>
+      <p id="etapaziente">Età: </p>&nbsp;
       </form>
 
+      <div class="row fw-normal" id="terapia-attuale">
+      <p>Terapia Attuale:</p>
+      </div>
+
       <div class="row fw-normal" id="paragrafoFarmaci">
+
       </div>
 
       <div class="container">
-        <div class="row">
+        <div class="row" id="ricerca-farmaci">
           <div class="col-sm-4">
             <br>
             <div class="input-group mb-3">
@@ -61,6 +63,10 @@
       </div>
 
       <div class="container">
+        <div class="row fw-normal" id="proprietà-find-farmaci">
+
+        </div>
+
         <div class="row fw-normal" id="lista-farmaci">
 
         </div>
@@ -68,7 +74,7 @@
 
 
     </div>
-    <div class="container" style="padding-top: 20px">
+    <div class="container">
       <div class="row fw-normal" id="lista-terapia">
         <div class="col-sm-2">
           <div class="input-group mb-3">

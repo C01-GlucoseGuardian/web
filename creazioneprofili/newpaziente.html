@@ -10,13 +10,14 @@
   
   
   
-  <script type="module" crossorigin src="/assets/newpaziente-6e93c2af.js"></script>
+  <script type="module" crossorigin src="/assets/newpaziente-7b7f79f6.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-ec808ebb.js">
-  <link rel="modulepreload" crossorigin href="/assets/bootstrap.esm-19ee7221.js">
+  <link rel="modulepreload" crossorigin href="/assets/index-19ee7221.js">
   <link rel="modulepreload" crossorigin href="/assets/api_wrapper-35c8f065.js">
   <link rel="modulepreload" crossorigin href="/assets/api-59437bcf.js">
-  <link rel="stylesheet" href="/assets/newpaziente-214cf106.css">
-  <link rel="stylesheet" href="/assets/styles-2f2c8106.css">
+  <link rel="stylesheet" href="/assets/index-c9868419.css">
+  <link rel="stylesheet" href="/assets/newpaziente-5ac44742.css">
+  <link rel="stylesheet" href="/assets/styles-d1f91d5f.css">
 </head>
 <body style="background-color: #f7f2ed;">
 
@@ -25,14 +26,10 @@
   <br>
   <div class="card rounded-2 text-black" style="background-color: #ffffff;">
     <nav class="nav" style="background-color: #efd5a3; ">
-      <p style="font-size: 20px; margin-left: 20px; margin-top: 15px; " class="fw-normal ">
+      <p style="font-size: 20px; margin-left: 25px; margin-top: 15px; " class="fw-normal ">
         Crea profilo paziente
       </p>
-      <form class="form-inline my-2 my-lg-0; fw-light" id="form-username-logo">
-        UserName &nbsp;
-        <img class="img-thumbnail rounded-circle" style="width: 50px; height: 50px;"
-             src="/assets/logoDoc-606968bd.png" alt="">
-      </form>
+
 
     </nav>
 
@@ -49,21 +46,21 @@
           <span class="input-group-text" style="background-color: #f9f2ed;"><i
               class="bi bi-person"> </i></span>
           <input type="text" id="nome" class="form-control" placeholder="Nome"
-                 aria-describedby="basic-addon1">
+                 aria-describedby="basic-addon1" style="font-size: 13px">
         </div>
 
         <div class="input-group mb-3">
           <span class="input-group-text" style="background-color: #f9f2ed;"><i
               class="bi bi-person"> </i> </span>
           <input type="text" class="form-control" id="cognome" placeholder="Cognome"
-                 aria-label="Cognome" aria-describedby="basic-addon1">
+                 aria-label="Cognome" aria-describedby="basic-addon1" style="font-size: 13px">
         </div>
 
         <div class="input-group mb-3">
           <span class="input-group-text" style="background-color: #f9f2ed;"><i
               class="bi bi-person-vcard"></i> </span>
           <input type="text" class="form-control" id="codiceFiscale" placeholder="Codice Fiscale"
-                 aria-label="CF" aria-describedby="basic-addon1">
+                 aria-label="CF" aria-describedby="basic-addon1" style="font-size: 13px">
         </div>
         <select class="form-select" id="sesso" style="background-color: #f9f2ed;"
                 aria-label="Default select example">
@@ -80,27 +77,27 @@
               class="bi bi-calendar"></i></span>
           <input type="text" class="form-control" id="dataNascita"
                  placeholder="Data di nascita DD/MM/YYYY" aria-label="Data di nascita"
-                 aria-describedby="basic-addon1">
+                 aria-describedby="basic-addon1" style="font-size: 13px">
         </div>
 
         <div class="input-group mb-3">
           <span class="input-group-text" style="background-color: #f9f2ed;"><i
               class="bi bi-envelope-at"></i> </span>
           <input type="email" class="form-control" id="email" placeholder="Email" aria-label="Email"
-                 aria-describedby="basic-addon1">
+                 aria-describedby="basic-addon1" style="font-size: 13px">
         </div>
 
         <div class="input-group mb-3">
           <span class="input-group-text" style="background-color: #f9f2ed;"><i
               class="bi bi-phone"></i> </span>
           <input type="tel" class="form-control" id="telefono" placeholder="Telefono"
-                 aria-label="Telefono" aria-describedby="basic-addon1">
+                 aria-label="Telefono" aria-describedby="basic-addon1" style="font-size: 13px">
         </div>
         <div class="input-group mb-3">
           <span class="input-group-text" style="background-color: #f9f2ed;"><i
               class="bi bi-house"></i> </span>
           <input type="text" class="form-control" id="indirizzo" placeholder="Indirizzo"
-                 aria-label="Indirizzo" aria-describedby="basic-addon1">
+                 aria-label="Indirizzo" aria-describedby="basic-addon1" style="font-size: 13px">
         </div>
 
       </div>
@@ -109,45 +106,45 @@
           <span class="input-group-text" style="background-color: #f9f2ed;"><i
               class="bi bi-telephone-plus"></i> </span>
           <input type="text" class="form-control" id="numeriUtili" placeholder="Numeri Utili"
-                 aria-label="Numeri Utili" aria-describedby="basic-addon1">
+                 aria-label="Numeri Utili" aria-describedby="basic-addon1" style="font-size: 13px">
         </div>
         <div class="input-group mb-3">
           <span class="input-group-text" style="background-color: #f9f2ed;"><i
               class="bi bi-bandaid"></i> </span>
           <input type="text" class="form-control" id="tipoDiabete" placeholder="Tipo Diabete"
-                 aria-label="Tipo Diabete" aria-describedby="basic-addon1">
+                 aria-label="Tipo Diabete" aria-describedby="basic-addon1" style="font-size: 13px">
         </div>
         <div class="input-group mb-3">
           <span class="input-group-text" style="background-color: #f9f2ed;"><i
               class="bi bi-file-medical"></i> </span>
           <input type="text" class="form-control" id="comorbilita" placeholder="Comorbilità"
-                 aria-label="Comorbilità" aria-describedby="basic-addon1">
+                 aria-label="Comorbilità" aria-describedby="basic-addon1" style="font-size: 13px">
         </div>
         <div class="input-group mb-3">
           <span class="input-group-text" style="background-color: #f9f2ed;"><i
               class="bi bi-capsule"></i> </span>
           <input type="text" class="form-control" id="farmaciAssunti" placeholder="Farmaci Assunti"
-                 aria-label="Farmaci Assunti" aria-describedby="basic-addon1">
+                 aria-label="Farmaci Assunti" aria-describedby="basic-addon1" style="font-size: 13px">
         </div>
         <div class="input-group mb-3">
           <span class="input-group-text" style="background-color: #f9f2ed;"><i
               class="bi bi-clock-history"></i></span>
           <input type="text" class="form-control" id="periodoMonitoraggio"
                  placeholder="Periodo di Monitoraggio" aria-label="periodoMonitoraaggio"
-                 aria-describedby="basic-addon1">
+                 aria-describedby="basic-addon1" style="font-size: 13px">
         </div>
       </div>
     </div>
 
     <div class="container">
-      <div class="row">
+      <div class="row" id="cerca-farmaci">
         <div class="col-sm-4">
           <br>
           <div class="input-group mb-3">
             <span class="input-group-text" style="background-color: #f9f2ed;"><i
                 class="bi bi-search"></i> </span>
             <input type="text" class="form-control" id="cerca-farmaco" placeholder="Cerca Farmaci"
-                   aria-label="Farmaci Assunti" aria-describedby="basic-addon1">
+                   aria-label="Farmaci Assunti" aria-describedby="basic-addon1" style="font-size: 13px">
           </div>
         </div>
         <div class="col-sm-8">
@@ -176,33 +173,33 @@
         <div class="col-sm-2">
           <div class="input-group mb-3">
             <input type="text" id="nomeFarmaco" class="form-control" placeholder="Nome Farmaco"
-                   aria-describedby="basic-addon1" style="background-color: #f9f2ed;">
+                   aria-describedby="basic-addon1" style="background-color: #f9f2ed;font-size: 13px">
           </div>
         </div>
         <div class="col-sm-2">
           <div class="input-group mb-3">
             <input type="text" id="dosaggio" class="form-control" placeholder="Dosaggio"
-                   aria-describedby="basic-addon1" style="background-color: #f9f2ed;">
+                   aria-describedby="basic-addon1" style="background-color: #f9f2ed;font-size: 13px">
           </div>
         </div>
         <div class="col-sm-1">
           <div class="input-group mb-3">
             <input type="text" id="ora" class="form-control" placeholder="Ora"
-                   aria-describedby="basic-addon1" style="background-color: #f9f2ed;">
+                   aria-describedby="basic-addon1" style="background-color: #f9f2ed;font-size: 13px">
           </div>
         </div>
         <div class="col-sm-2">
           <div class="input-group mb-3">
             <input type="text" id="somministrazione" class="form-control"
                    placeholder="Somministrazione" aria-describedby="basic-addon1"
-                   style="background-color: #f9f2ed;">
+                   style="background-color: #f9f2ed;font-size: 13px">
           </div>
         </div>
         <div class="col-sm-2">
           <div class="input-group mb-3">
             <input type="text" id="noteAggiuntive" class="form-control"
                    placeholder="Note Aggiuntive" aria-describedby="basic-addon1"
-                   style="background-color: #f9f2ed;">
+                   style="background-color: #f9f2ed; font-size: 13px">
           </div>
         </div>
         <div class="col-sm-3">
@@ -214,7 +211,7 @@
         </div>
       </div>
     </div>
-  </div>
+
 
   <div class="conatiner">
     <div class="row fw-normal" id="mostra-farmaci">
@@ -231,6 +228,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 <br>
 </body>
