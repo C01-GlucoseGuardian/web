@@ -48,7 +48,7 @@ function onLoginBtnClick() {
       }
     } else {
       login(email, password)
-        .then()
+        .then(handleResponse)
         .catch((error) => {
           if (error.status == 401) {
             document.getElementById("otpInputDiv").style.visibility = "visible";
