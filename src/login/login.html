@@ -7,6 +7,18 @@
   <link rel="stylesheet" href="../scss/styles.scss">
   <script type="module" src="../js/main.js"></script>
   <script type="module" src="../js/login.js"></script>
+  <style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+  </style>
 </head>
 <body>
 
@@ -43,6 +55,13 @@
                     <input type="password" id="password" class="form-control"
                            style="background-color: #f9f2ed;" placeholder="Password"
                            aria-label="Password" aria-describedby="basic-addon2">
+                  </div>
+
+                  <div class="input-group mb-3" style="visibility: hidden;" id="otpInputDiv">
+                    <input type="number" id="otpInput" class="form-control"
+                           oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                           style="background-color: #f9f2ed;" placeholder="OTP"
+                           aria-label="OTP" aria-describedby="basic-addon2" maxlength="6">
                   </div>
 
 
