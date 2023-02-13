@@ -4,9 +4,6 @@ import {getPazienteByDottore} from "./api";
 import {getFeedBackByPaziente} from "./api";
 import {sendNotifica} from "./api";
 
-import swal from 'sweetalert';
-
-
 document.addEventListener('DOMContentLoaded', () => {
 
   (function mostraPaziente() {
@@ -29,8 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
       let html = '';
       for (let i = 0; i < terapia.farmaci.length; i++) {
         let farmaco = terapia.farmaci[i];
-        //swal(JSON.stringify(farmaco))
-        //swal(JSON.stringify(farmaco.nomeFarmaco))
+        //alert(JSON.stringify(farmaco))
+        //alert(JSON.stringify(farmaco.nomeFarmaco))
 
         html += `
           <p id="terapia-paziente">Nome Farmaco:${farmaco.nomeFarmaco} -  Dosaggio: ${farmaco.dosaggio} - Orario Assunzione: ${farmaco.orarioAssunzione} - Via di Somministrazione: ${farmaco.viaDiSomministrazione} - Note Aggiuntive: ${farmaco.viaDiSomministrazione}</p><br>
@@ -77,8 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
       pazienteDestinatario
     });
     console.log(notifica);
-    sendNotifica(notifica).then(risposta => swal(risposta.msg)).catch(
-        error => swal(error.response.msg))
+    sendNotifica(notifica).then(risposta => alert(risposta.msg)).catch(
+        error => alert(error.response.msg))
 
 
   }

@@ -1,9 +1,6 @@
 import {fetchResource} from "./api_wrapper";
 import {findFarmaco} from "./api";
 
-import swal from 'sweetalert';
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const listaFarmaco = [];
 
@@ -78,8 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
         indirizzo, telefono,
         email, sesso, tipoDiabete, comorbilita, farmaciAssunti,
         periodoDiMonitoraggio, numeriUtili, terapia)
-    risultato.then(risposta => swal(risposta.msg)).catch(
-        error => swal(error.response.msg))
+    risultato.then(risposta => alert(risposta.msg)).catch(
+        error => alert(error.response.msg))
 
   });
 
@@ -116,9 +113,9 @@ document.addEventListener('DOMContentLoaded', () => {
     findFarmaco(nomeFarmaco)
     .then(farmaci => {
       if (nomeFarmaco.length > 50) {
-                swal("il nome del farmaco supera il numero massimo di caratteri consentiti")
+                alert("il nome del farmaco supera il numero massimo di caratteri consentiti")
                 } else if (farmaci.list.length == 0) {
-                               swal("farmaco non riconosciuto")
+                               alert("farmaco non riconosciuto")
                              }
       console.log(farmaci);
       const farmaco = farmaci.list[0];
@@ -134,20 +131,20 @@ document.addEventListener('DOMContentLoaded', () => {
       )
 
       if (nomeFarmaco.length > 50) {
-        swal("Il campo nome farmaco supera i caratteri cnsentiti")
+        alert("Il campo nome farmaco supera i caratteri cnsentiti")
       }
 
       if (!dosaggio) {
-        swal("Il campo dosaggio non può essere vuoto")
+        alert("Il campo dosaggio non può essere vuoto")
       }
       if (!checkTimeFormat(ora)) {
-        swal("Il formato dell'ora non è valido")
+        alert("Il formato dell'ora non è valido")
       }
       if (!somministrazione) {
-        swal("Il campo somministrazione non può essere vuoto")
+        alert("Il campo somministrazione non può essere vuoto")
       }
       if (noteAggiuntive.length > 300) {
-        swal(
+        alert(
             "Il campo note aggiuntive aggiuntive supera i caratteri consentiti")
       }
 

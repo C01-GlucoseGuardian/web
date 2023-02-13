@@ -1,7 +1,5 @@
 import {fetchResource} from "./api_wrapper";
 
-import swal from 'sweetalert';
-
 document.addEventListener('DOMContentLoaded', () => {
   function saveTutore(
       codiceFiscale,
@@ -49,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let risultato = saveTutore(codiceFiscale, nome, cognome, dataNascita,
         indirizzo, telefono,
         email, sesso)
-    risultato.then(risposta => swal(risposta.msg)).catch(
-        error => swal(error.response.msg))
+    risultato.then(risposta => alert(risposta.msg)).catch(
+        error => alert(error.response.msg))
   });
 })
