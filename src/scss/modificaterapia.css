@@ -1,18 +1,21 @@
-body {
-  font-family: Arial;
-}
 
 nav {
   background-color: #efd5a3;
 }
 
-#nome-paziente {
-  padding-top: 60px;
-  font-size: 18px;
+#generalita-paziente{
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#ricerca-farmaci{
+  padding-top: 30px;
 }
 
-#età-paziente {
-  font-size: 14px;
+#lista-terapia{
+  padding-top: 20px;
+  padding-left: 8px;
 }
 
 #cancella-selezionati, #nuovo-farmaco {
@@ -79,5 +82,11 @@ nav {
 }
 
 #paragrafoFarmaci{
-  padding-left: 30px;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+#terapia-attuale{
+  padding-top: 20px;
+  padding-left: 15px;
 }

@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(cfTutore);
     getTutore(cfTutore)
     .then(tutore => {
-      console.log(tutore);
-
       html = `
            
           <div class="row fw-normal" id="tutoreStampaNome">

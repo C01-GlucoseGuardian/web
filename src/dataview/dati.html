@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Dati Paziente</title>
+  <link rel="stylesheet" href="../scss/styles.scss">
   <link rel="stylesheet" href="../scss/datipaziente.css">
+
   <link rel="stylesheet" href="../scss/styles.scss">
 
   <script type="module" src="../js/main.js"></script>
   <script type="module" src="../js/graph.js"></script>
   <script type="module" src="../js/datipaziente.js"></script>
   <script type="module" src="../js/modificaterapia.js"></script>
+
 </head>
 <body>
 
@@ -19,7 +22,7 @@
   </div>
 </nav>
 
-<div class="container">
+<div class="container" id="container">
   <div class="row" id="mostraPaziente">
     <div class="col-md-7">
       <p id="nome-paziente">Nome Paziente</p>
@@ -29,7 +32,7 @@
       <button type="button" class="btn btn-sm" id="modifica-terapia"><a href="modificaterapia.html"
                                                                         style="text-decoration: none; color: inherit">MODIFICA
         TERAPIA</a></button>
-      <button type="button" class="btn btn-sm" id="associa-tutore"><a href="../paziente/associatutore.html"> ASSOCIA TUTORE</a></button>
+      <button type="button" class="btn btn-sm" id="associa-tutore"><a href="../paziente/associatutore.html" style="text-decoration: none; color: inherit"> ASSOCIA TUTORE</a></button>
     </div>
   </div>
   <div class="row">
@@ -41,8 +44,6 @@
     <div class="col-md-5">
       <p id="terapia-attuale">TERAPIA ATTUALE:</p>
       <p id="terapia-paziente">Terapia in atto...</p>
-      <button type="button" class="btn btn-sm" id="riscontro-positivo">COMUNICA RISCONTRO POSITIVO
-      </button>
       <p id="feedback-ricevuti">ULTIMI FEEDBACK RICEVUTI</p>
       <p id="feedback-list">Feedback list...</p>
     </div>

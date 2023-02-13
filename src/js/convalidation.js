@@ -54,4 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
   };
+  function logout(){
+    localStorage.clear();
+    window.location = "../login/login.html"
+  }
+  document.getElementById("logout").onclick = logout;
 });
