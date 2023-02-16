@@ -1,5 +1,7 @@
 # Glucose Guardian Web Frontend
-[![Build Status](https://travis-ci.com/C01-GlucoseGuardian/web.svg?branch=main)](https://travis-ci.com/C01-GlucoseGuardian/web) [![Docker](https://github.com/C01-GlucoseGuardian/web/actions/workflows/docker-image.yml/badge.svg)](https://github.com/C01-GlucoseGuardian/web/actions/workflows/docker-image.yml) 
+[![Build Status](https://travis-ci.com/C01-GlucoseGuardian/web.svg?branch=main)](https://travis-ci.com/C01-GlucoseGuardian/web) [![Docker](https://github.com/C01-GlucoseGuardian/web/actions/workflows/docker-image.yml/badge.svg)](https://github.com/C01-GlucoseGuardian/web/actions/workflows/docker-image.yml) [![Github Pages](https://github.com/C01-GlucoseGuardian/web/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/C01-GlucoseGuardian/web/actions/workflows/pages/pages-build-deployment) 
+
+
 
 ## Introduzione
 Questa repo contiene il codice sorgente del frontend web del progetto Glucose Guardian, basato sul framework Bootstrap e il tool di build Vite.
