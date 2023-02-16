@@ -119,7 +119,7 @@ Il progetto è stato realizzato dal **Team C01**<br>
 </table>
 
 ## Link utili
-- [Bakcend web](https://github.com/C01-GlucoseGuardian/webbackend)
+- [Backend web](https://github.com/C01-GlucoseGuardian/webbackend)
 - [Mobile App](https://github.com/C01-GlucoseGuardian/mobileApp)
 - [Test di Sistema](https://github.com/C01-GlucoseGuardian/fullproject)
 - [Documentazione](https://docs.glucoseguardian.it)
